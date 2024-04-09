@@ -1,0 +1,381 @@
+2024-04-09T14:24:10.4045544Z ##[section]Starting: Run Pipeline
+2024-04-09T14:24:10.4215174Z ==============================================================================
+2024-04-09T14:24:10.4215525Z Task         : PowerShell
+2024-04-09T14:24:10.4215667Z Description  : Run a PowerShell script on Linux, macOS, or Windows
+2024-04-09T14:24:10.4215885Z Version      : 2.237.5
+2024-04-09T14:24:10.4216025Z Author       : Microsoft Corporation
+2024-04-09T14:24:10.4216194Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/powershell
+2024-04-09T14:24:10.4216570Z ==============================================================================
+2024-04-09T14:24:11.6330776Z Generating script.
+2024-04-09T14:24:11.7103873Z Formatted command: . 'D:\Agent\_work\1\s\.azureDevOps\DevOps-Pipeline.ps1' -environment "AzureDevOps" -version "ci" -appBuild 0 -appRevision 2936
+2024-04-09T14:24:11.7548203Z ========================== Starting Command Output ===========================
+2024-04-09T14:24:11.7829942Z ##[command]"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command ". 'D:\Agent\_work\_temp\ed5feb5c-ec48-432b-802e-2955a8f052ce.ps1'"
+2024-04-09T14:24:12.4169908Z Set artifact = //20.3/de
+2024-04-09T14:24:12.4235298Z Set pipelineName = varys.rwb.core-ci
+2024-04-09T14:24:12.4298830Z Set containerName = devsrv01-varysrwbcore-ci
+2024-04-09T14:24:12.4507527Z Set installApps = '.alpackages/Core 9.1.0.257458 - 23.0 (BC 2023 Wave 2).app,.alpackages/OP 23.1.1.476313 - 23.0 (BC 2023 Wave 2).app'
+2024-04-09T14:24:12.4595381Z Set installTestApps = ''
+2024-04-09T14:24:12.4641033Z Set previousApps = 'https://businesscentralapps.azureedge.net/helloworld/latest/apps.zip'
+2024-04-09T14:24:12.4651230Z Set appSourceCopMandatoryAffixes = ''
+2024-04-09T14:24:12.4663173Z Set appSourceCopSupportedCountries = ''
+2024-04-09T14:24:12.4703589Z Set appFolders = '../'
+2024-04-09T14:24:12.4743856Z Set testFolders = 'test'
+2024-04-09T14:24:12.4787855Z Set memoryLimit = '8G'
+2024-04-09T14:24:12.4827637Z Set additionalCountries = ''
+2024-04-09T14:24:12.4849708Z Set genericImageName = ''
+2024-04-09T14:24:12.4932292Z Set vaultNameForLocal = 'BuildVariablen'
+2024-04-09T14:24:12.4973306Z Set bcContainerHelperVersion = 'latest'
+2024-04-09T14:24:12.5046553Z Set installTestRunner = True
+2024-04-09T14:24:12.5097584Z Set installTestFramework = True
+2024-04-09T14:24:12.5135381Z Set installTestLibraries = True
+2024-04-09T14:24:12.5166062Z Set installPerformanceToolkit = False
+2024-04-09T14:24:12.5195730Z Set enableCodeCop = False
+2024-04-09T14:24:12.5226034Z Set enableAppSourceCop = False
+2024-04-09T14:24:12.5257128Z Set enablePerTenantExtensionCop = False
+2024-04-09T14:24:12.5285795Z Set enableUICop = False
+2024-04-09T14:24:12.5326232Z Set doNotSignApps = True
+2024-04-09T14:24:12.5417565Z Set doNotRunTests = False
+2024-04-09T14:24:12.5460998Z Set cacheImage = True
+2024-04-09T14:24:12.5497095Z Set CreateRuntimePackages = True
+2024-04-09T14:24:14.1576022Z BcContainerHelper version 6.0.15
+2024-04-09T14:24:14.6995205Z Setting hostHelperFolder = D:\BcContainerHelper
+2024-04-09T14:24:14.7082078Z Setting bcartifactsCacheFolder = D:\Artifacts.cache
+2024-04-09T14:24:14.7178070Z BC.HelperFunctions emits usage statistics telemetry to Microsoft
+2024-04-09T14:24:14.9470735Z Running on Windows, PowerShell 5.1.20348.859
+2024-04-09T14:24:18.6285904Z ContainerHelperDownloaded
+2024-04-09T14:24:18.6323425Z Custom Files
+2024-04-09T14:24:18.6344959Z Version BaseApp  23.2.0.0
+2024-04-09T14:24:20.2446549Z BaseFolder before run: D:\Agent\_work\1\s
+2024-04-09T14:24:20.2460282Z License file is  ***
+2024-04-09T14:24:20.2474328Z Using ArtifactURL file is  https://bcartifacts-exdbf9fwegejdqak.b02.azurefd.net/onprem/23.2.14098.14562/de
+2024-04-09T14:24:20.2488365Z Run-AlPipeline 
+2024-04-09T14:24:20.2488959Z     -pipelinename varys.rwb.core-ci 
+2024-04-09T14:24:20.2490739Z     -containerName devsrv01-varysrwbcore-ci 
+2024-04-09T14:24:20.2491613Z     -imageName bcimage 
+2024-04-09T14:24:20.2495512Z     -artifact https://bcartifacts-exdbf9fwegejdqak.b02.azurefd.net/onprem/23.2.14098.14562/de 
+2024-04-09T14:24:20.2497761Z     -licenseFile *** 
+2024-04-09T14:24:20.2498388Z     -memoryLimit 8G 
+2024-04-09T14:24:20.2499098Z     -baseFolder D:\Agent\_work\1\s 
+2024-04-09T14:24:20.2499767Z     -bcAuthContext  
+2024-04-09T14:24:20.2500346Z     -environment  
+2024-04-09T14:24:20.2501042Z     -installApps D:\Agent\_work\1\s\ 
+2024-04-09T14:24:20.2501716Z     -installTestApps  
+2024-04-09T14:24:20.2502706Z     -previousApps https://businesscentralapps.azureedge.net/helloworld/latest/apps.zip 
+2024-04-09T14:24:20.2503609Z     -appFolders D:\Agent\_work\1\s 
+2024-04-09T14:24:20.2504323Z     -doNotRunTests:False 
+2024-04-09T14:24:20.2505160Z     -azureDevOps:(AzureDevOps -eq 'AzureDevOps') 
+2024-04-09T14:24:20.2506024Z     -gitLab:(AzureDevOps -eq 'GitLab') 
+2024-04-09T14:24:20.2506911Z     -gitHubActions:(AzureDevOps -eq 'GitHubActions') 
+2024-04-09T14:24:20.2507635Z     -failOn 'error' 
+2024-04-09T14:24:20.2508292Z     -additionalCountries  
+2024-04-09T14:24:20.2509057Z     -buildArtifactFolder D:\Agent\_work\1\a 
+2024-04-09T14:24:20.2509847Z     -CreateRuntimePackages:True 
+2024-04-09T14:24:20.2510734Z     -appBuild 0 -appRevision 2936
+2024-04-09T14:24:20.4924026Z   _____                               _
+2024-04-09T14:24:20.4925296Z  |  __ \                             | |
+2024-04-09T14:24:20.4925826Z  | |__) |_ _ _ __ __ _ _ __ ___   ___| |_ ___ _ __ ___
+2024-04-09T14:24:20.4927072Z  |  ___/ _` | '__/ _` | '_ ` _ \ / _ \ __/ _ \ '__/ __|
+2024-04-09T14:24:20.4927614Z  | |  | (_| | | | (_| | | | | | |  __/ |_  __/ |  \__ \
+2024-04-09T14:24:20.4928277Z  |_|   \__,_|_|  \__,_|_| |_| |_|\___|\__\___|_|  |___/
+2024-04-09T14:24:20.4928559Z 
+2024-04-09T14:24:20.4965119Z Pipeline name                   varys.rwb.core-ci
+2024-04-09T14:24:20.4989133Z Container name                  devsrv01-varysrwbcore-ci
+2024-04-09T14:24:20.5008150Z Image name                      bcimage
+2024-04-09T14:24:20.5029101Z ArtifactUrl                     https://bcartifacts-exdbf9fwegejdqak.b02.azurefd.net/onprem/23.2.14098.14562/de
+2024-04-09T14:24:20.5046639Z BcAuthContext                   Not Specified
+2024-04-09T14:24:20.5073725Z Environment                     
+2024-04-09T14:24:20.5112803Z ReUseContainer                  False
+2024-04-09T14:24:20.5142499Z KeepContainer                   False
+2024-04-09T14:24:20.5162725Z useCompilerFolder               False
+2024-04-09T14:24:20.5175632Z artifactCachePath               
+2024-04-09T14:24:20.5191241Z useDevEndpoint                  False
+2024-04-09T14:24:20.5209224Z Auth                            UserPassword
+2024-04-09T14:24:20.5223710Z CompanyName                     
+2024-04-09T14:24:20.5242201Z MemoryLimit                     8G
+2024-04-09T14:24:20.5267573Z FailOn                          error
+2024-04-09T14:24:20.5302591Z TreatTestFailuresAsWarnings     False
+2024-04-09T14:24:20.5333283Z Enable Task Scheduler           False
+2024-04-09T14:24:20.5352644Z Assign Premium Plan             False
+2024-04-09T14:24:20.5371306Z Install Test Runner             False
+2024-04-09T14:24:20.5390857Z Install Test Framework          False
+2024-04-09T14:24:20.5409954Z Install Test Libraries          False
+2024-04-09T14:24:20.5429663Z Install Perf. Toolkit           False
+2024-04-09T14:24:20.5447319Z InstallOnlyReferencedApps       False
+2024-04-09T14:24:20.5463139Z generateDependencyArtifact      False
+2024-04-09T14:24:20.5479591Z CopySymbolsFromContainer        False
+2024-04-09T14:24:20.5496417Z enableCodeCop                   False
+2024-04-09T14:24:20.5511947Z enableAppSourceCop              False
+2024-04-09T14:24:20.5527174Z enableUICop                     False
+2024-04-09T14:24:20.5543712Z enablePerTenantExtensionCop     False
+2024-04-09T14:24:20.5561850Z enableCodeAnalyzersOnTestApps   False
+2024-04-09T14:24:20.5594604Z doNotPerformUpgrade             False
+2024-04-09T14:24:20.5625201Z doNotPublishApps                False
+2024-04-09T14:24:20.5654509Z uninstallRemovedApps            False
+2024-04-09T14:24:20.5679533Z escapeFromCops                  False
+2024-04-09T14:24:20.5705516Z doNotBuildTests                 False
+2024-04-09T14:24:20.5732144Z doNotRunTests                   False
+2024-04-09T14:24:20.5753833Z doNotRunBcptTests               False
+2024-04-09T14:24:20.5777012Z useDefaultAppSourceRuleSet      False
+2024-04-09T14:24:20.5789968Z rulesetFile                     
+2024-04-09T14:24:20.5807669Z generateErrorLog                False
+2024-04-09T14:24:20.5824065Z enableExternalRulesets          False
+2024-04-09T14:24:20.5840560Z azureDevOps                     True
+2024-04-09T14:24:20.5855246Z gitLab                          False
+2024-04-09T14:24:20.5871499Z gitHubActions                   False
+2024-04-09T14:24:20.5884397Z vsixFile                        
+2024-04-09T14:24:20.5904883Z License file                    Specified
+2024-04-09T14:24:20.5927521Z CodeSignCertPfxFile             Not specified
+2024-04-09T14:24:20.5957545Z CodeSignCertPfxPassword         Not specified
+2024-04-09T14:24:20.5991391Z CodeSignCertIsSelfSigned        False
+2024-04-09T14:24:20.6000809Z KeyVaultCertPfxFile             Not specified
+2024-04-09T14:24:20.6009788Z KeyVaultCertPfxPassword         Not specified
+2024-04-09T14:24:20.6020938Z KeyVaultClientId                
+2024-04-09T14:24:20.6031363Z BuildOutputFile                 
+2024-04-09T14:24:20.6045759Z ContainerEventLogFile           
+2024-04-09T14:24:20.6066160Z TestResultsFile                 D:\Agent\_work\1\s\TestResults.xml
+2024-04-09T14:24:20.6084993Z BcptTestResultsFile             D:\Agent\_work\1\s\bcptTestResults.json
+2024-04-09T14:24:20.6102661Z TestResultsFormat               JUnit
+2024-04-09T14:24:20.6144319Z AdditionalCountries             
+2024-04-09T14:24:20.6161237Z PackagesFolder                  D:\Agent\_work\1\s\.packages
+2024-04-09T14:24:20.6177711Z OutputFolder                    D:\Agent\_work\1\s\.output
+2024-04-09T14:24:20.6194667Z BuildArtifactFolder             D:\Agent\_work\1\a
+2024-04-09T14:24:20.6215581Z CreateRuntimePackages           True
+2024-04-09T14:24:20.6227994Z AppVersion                      
+2024-04-09T14:24:20.6245077Z AppBuild                        0
+2024-04-09T14:24:20.6270207Z AppRevision                     2936
+2024-04-09T14:24:20.6301611Z SourceRepositoryUrl             
+2024-04-09T14:24:20.6332391Z SourceCommit                    
+2024-04-09T14:24:20.6361267Z BuildBy                         BcContainerHelper,6.0.15
+2024-04-09T14:24:20.6394227Z BuildUrl                        
+2024-04-09T14:24:20.6412144Z Install Apps
+2024-04-09T14:24:20.6456080Z - D:\Agent\_work\1\s\
+2024-04-09T14:24:20.6466219Z Install Test Apps
+2024-04-09T14:24:20.6478764Z - None
+2024-04-09T14:24:20.6489372Z Previous Apps
+2024-04-09T14:24:20.6528633Z - https://businesscentralapps.azureedge.net/helloworld/latest/apps.zip
+2024-04-09T14:24:20.6539800Z Application folders
+2024-04-09T14:24:20.6571329Z - D:\Agent\_work\1\s
+2024-04-09T14:24:20.6579278Z Test application folders
+2024-04-09T14:24:20.6590328Z - None
+2024-04-09T14:24:20.6601630Z BCPT Test application folders
+2024-04-09T14:24:20.6612696Z - None
+2024-04-09T14:24:20.6623276Z BCPT Test suites
+2024-04-09T14:24:20.6634240Z - None
+2024-04-09T14:24:20.6643618Z Custom CodeCops
+2024-04-09T14:24:20.6649488Z - None
+2024-04-09T14:24:20.6794296Z 
+2024-04-09T14:24:20.6796119Z   _____       _ _ _                                          _        _
+2024-04-09T14:24:20.6796744Z  |  __ \     | | (_)                                        (_)      (_)
+2024-04-09T14:24:20.6797391Z  | |__) |   _| | |_ _ __   __ _    __ _  ___ _ __   ___ _ __ _  ___   _ _ __ ___   __ _  __ _  ___
+2024-04-09T14:24:20.6798698Z  |  ___/ | | | | | | '_ \ / _` |  / _` |/ _ \ '_ \ / _ \ '__| |/ __| | | '_ ` _ \ / _` |/ _` |/ _ \
+2024-04-09T14:24:20.6799318Z  | |   | |_| | | | | | | | (_| | | (_| |  __/ | | |  __/ |  | | (__  | | | | | | | (_| | (_| |  __/
+2024-04-09T14:24:20.6799968Z  |_|    \__,_|_|_|_|_| |_|\__, |  \__, |\___|_| |_|\___|_|  |_|\___| |_|_| |_| |_|\__,_|\__, |\___|
+2024-04-09T14:24:20.6801007Z                            __/ |   __/ |                                                 __/ |
+2024-04-09T14:24:20.6801550Z                           |___/   |___/                                                 |___/
+2024-04-09T14:24:20.6801774Z 
+2024-04-09T14:24:20.8719528Z Pulling mcr.microsoft.com/businesscentral:ltsc2022
+2024-04-09T14:24:21.3539200Z 
+2024-04-09T14:24:21.3544890Z Pulling generic image took 1 seconds
+2024-04-09T14:24:21.3705703Z 
+2024-04-09T14:24:21.3706449Z    _____                _   _                               _        _
+2024-04-09T14:24:21.3706775Z   / ____|              | | (_)                             | |      (_)
+2024-04-09T14:24:21.3707160Z  | |     _ __ ___  __ _| |_ _ _ __   __ _    ___ ___  _ __ | |_ __ _ _ _ __   ___ _ __
+2024-04-09T14:24:21.3708508Z  | |    | '__/ _ \/ _` | __| | '_ \ / _` |  / __/ _ \| '_ \| __/ _` | | '_ \ / _ \ '__|
+2024-04-09T14:24:21.3708857Z  | |____| | |  __/ (_| | |_| | | | | (_| | | (__ (_) | | | | |_ (_| | | | | |  __/ |
+2024-04-09T14:24:21.3709091Z   \_____|_|  \___|\__,_|\__|_|_| |_|\__, |  \___\___/|_| |_|\__\__,_|_|_| |_|\___|_|
+2024-04-09T14:24:21.3709258Z                                      __/ |
+2024-04-09T14:24:21.3709388Z                                     |___/
+2024-04-09T14:24:21.3709516Z 
+2024-04-09T14:24:21.4824595Z Creaing docker container
+2024-04-09T14:24:21.6128032Z WARNING: Container name should not exceed 15 characters
+2024-04-09T14:24:21.7625121Z BcContainerHelper is version 6.0.15
+2024-04-09T14:24:21.7639691Z BcContainerHelper is running as administrator
+2024-04-09T14:24:22.6519283Z HyperV is Enabled
+2024-04-09T14:24:22.6592754Z UsePsSession is True
+2024-04-09T14:24:22.6639648Z UsePwshForBc24 is True
+2024-04-09T14:24:22.6710022Z Host is Microsoft Windows Server 2022 Standard - 10.0.20348.1129
+2024-04-09T14:24:22.7381104Z Docker Client Version is 26.0.0
+2024-04-09T14:24:22.7396320Z Docker Server Version is 26.0.0
+2024-04-09T14:24:22.9437673Z Removing Desktop shortcuts
+2024-04-09T14:24:23.6257426Z Fetching all docker images
+2024-04-09T14:24:23.6966561Z Fetching all docker volumes
+2024-04-09T14:24:23.7534310Z ArtifactUrl and ImageName specified
+2024-04-09T14:24:24.3505012Z Image bcimage:onprem-23.2.14098.14562-de already exists
+2024-04-09T14:24:25.2937708Z Using image bcimage:onprem-23.2.14098.14562-de
+2024-04-09T14:24:25.3755665Z Creating Container devsrv01-varysrwbcore-ci
+2024-04-09T14:24:25.3956066Z Style: onprem
+2024-04-09T14:24:25.3979171Z Multitenant: No
+2024-04-09T14:24:25.4000886Z Version: 23.2.14098.14562
+2024-04-09T14:24:25.4058846Z Platform: 23.0.14532.0
+2024-04-09T14:24:25.4081855Z Generic Tag: 1.0.2.18
+2024-04-09T14:24:25.4104912Z Container OS Version: 10.0.20348.2340 (ltsc2022)
+2024-04-09T14:24:25.4123420Z Host OS Version: 10.0.20348.1129 (ltsc2022)
+2024-04-09T14:24:25.4589840Z WARNING: Container and host OS build is 20348 or above, defaulting to process isolation. If you encounter issues, you could try to install HyperV.
+2024-04-09T14:24:25.4611898Z Using process isolation
+2024-04-09T14:24:25.4706597Z Using locale de-DE
+2024-04-09T14:24:25.4814212Z Disabling the standard eventlog dump to container log every 2 seconds (use -dumpEventLog to enable)
+2024-04-09T14:24:25.4894377Z Using license file https://varysdev.blob.core.windows.net/bclicence/5209508.bclicense
+2024-04-09T14:24:25.5259291Z Downloading D:\BcContainerHelper\Extensions\devsrv01-varysrwbcore-ci\my\license.bclicense
+2024-04-09T14:24:25.5483628Z Downloading using WebClient
+2024-04-09T14:24:25.8102707Z Additional Parameters:
+2024-04-09T14:24:25.8137408Z --volume "D:\Agent\_work\1\s:c:\sources"
+2024-04-09T14:24:25.8146296Z --env customNavSettings=EnableTaskScheduler=False
+2024-04-09T14:24:25.8165238Z Files in D:\BcContainerHelper\Extensions\devsrv01-varysrwbcore-ci\my:
+2024-04-09T14:24:25.8251980Z - AdditionalOutput.ps1
+2024-04-09T14:24:25.8264554Z - HelperFunctions.ps1
+2024-04-09T14:24:25.8284918Z - license.bclicense
+2024-04-09T14:24:25.8308300Z - MainLoop.ps1
+2024-04-09T14:24:25.8323793Z - SetupVariables.ps1
+2024-04-09T14:24:25.8339074Z - updatehosts.ps1
+2024-04-09T14:24:25.8362106Z Creating container devsrv01-varysrwbcore-ci from image bcimage:onprem-23.2.14098.14562-de
+2024-04-09T14:24:26.1213229Z fac059845c3b5f783a65789903f57abf94271af9575fef636324f7106624abb2
+2024-04-09T14:24:28.4801449Z Waiting for container devsrv01-varysrwbcore-ci to be ready
+2024-04-09T14:24:30.6237356Z Adding DEVSRV01-VARYSR to hosts file
+2024-04-09T14:24:31.6822634Z Initializing...
+2024-04-09T14:24:31.6824101Z Setting host.containerhelper.internal to 172.31.16.1 in container hosts file
+2024-04-09T14:24:31.6824482Z Starting Container
+2024-04-09T14:24:31.6824931Z Hostname is devsrv01-varysrwbcore-ci
+2024-04-09T14:24:32.7381466Z PublicDnsName is devsrv01-varysrwbcore-ci
+2024-04-09T14:24:32.7381737Z Using NavUserPassword Authentication
+2024-04-09T14:24:35.9516748Z Starting Local SQL Server
+2024-04-09T14:24:35.9517208Z Starting Internet Information Server
+2024-04-09T14:24:37.0259729Z Creating Self Signed Certificate
+2024-04-09T14:24:37.0261910Z Self Signed Certificate Thumbprint 6D4E19624A610D9441987D211086F666704A458B
+2024-04-09T14:24:37.0263659Z DNS identity devsrv01-varysrwbcore-ci
+2024-04-09T14:24:37.0264699Z Modifying Service Tier Config File with Instance Specific Settings
+2024-04-09T14:24:37.0265459Z Modifying Service Tier Config File with settings from environment variable
+2024-04-09T14:24:37.0266166Z Setting EnableTaskScheduler to False
+2024-04-09T14:25:09.7425102Z Starting Service Tier
+2024-04-09T14:25:09.7426049Z Registering event sources
+2024-04-09T14:25:09.7448320Z Creating DotNetCore Web Server Instance
+2024-04-09T14:25:09.7455032Z Using application pool name: BC
+2024-04-09T14:25:09.7455972Z Using default container name: NavWebApplicationContainer
+2024-04-09T14:25:12.9509582Z Copy files to WWW root C:\inetpub\wwwroot\BC
+2024-04-09T14:25:15.2535571Z Create the application pool BC
+2024-04-09T14:25:17.8957219Z Create website: NavWebApplicationContainer without SSL
+2024-04-09T14:25:17.8957848Z Update configuration: navsettings.json
+2024-04-09T14:25:18.9881433Z Done Configuring Web Client
+2024-04-09T14:25:18.9882101Z Using license file 'c:\run\my\license.bclicense'
+2024-04-09T14:25:28.7229004Z Import License
+2024-04-09T14:25:29.8130970Z Creating http download site
+2024-04-09T14:25:30.8757804Z Setting SA Password and enabling SA
+2024-04-09T14:25:30.8758098Z Creating admin as SQL User and add to sysadmin
+2024-04-09T14:25:33.0043705Z WARNING: This license is not compatible with this version of Business Central.
+2024-04-09T14:25:33.0043971Z Creating SUPER user
+2024-04-09T14:25:35.1232761Z WARNING: This license is not compatible with this version of Business Central.
+2024-04-09T14:25:37.2240053Z WARNING: This license is not compatible with this version of Business Central.
+2024-04-09T14:25:37.2240365Z Container IP Address: 172.31.17.128
+2024-04-09T14:25:37.2240839Z Container Hostname  : devsrv01-varysrwbcore-ci
+2024-04-09T14:25:37.2241252Z Container Dns Name  : devsrv01-varysrwbcore-ci
+2024-04-09T14:25:37.2255214Z Web Client          : http://devsrv01-varysrwbcore-ci/BC/
+2024-04-09T14:25:37.2258835Z Dev. Server         : http://devsrv01-varysrwbcore-ci
+2024-04-09T14:25:37.2259964Z Dev. ServerInstance : BC
+2024-04-09T14:25:37.2261169Z Setting devsrv01-varysrwbcore-ci to 172.31.17.128 in host hosts file
+2024-04-09T14:25:37.2261566Z 
+2024-04-09T14:25:37.2261897Z Files:
+2024-04-09T14:25:37.2262971Z http://devsrv01-varysrwbcore-ci:8080/ALLanguage.vsix
+2024-04-09T14:25:38.2968867Z 
+2024-04-09T14:25:38.2969385Z Container Total Physical Memory is 32.0Gb
+2024-04-09T14:25:38.2969632Z Container Free Physical Memory is 25.5Gb
+2024-04-09T14:25:38.2969782Z 
+2024-04-09T14:25:38.2969938Z Initialization took 67 seconds
+2024-04-09T14:25:38.2977853Z Ready for connections!
+2024-04-09T14:25:41.3283084Z Reading CustomSettings.config from devsrv01-varysrwbcore-ci
+2024-04-09T14:25:42.0699862Z Creating Desktop Shortcuts for devsrv01-varysrwbcore-ci
+2024-04-09T14:25:42.4562916Z Cleanup old dotnet core assemblies
+2024-04-09T14:25:42.4674659Z Container devsrv01-varysrwbcore-ci successfully created
+2024-04-09T14:25:42.7116055Z 
+2024-04-09T14:25:42.7124330Z Use:
+2024-04-09T14:25:42.7142062Z Get-BcContainerEventLog -containerName devsrv01-varysrwbcore-ci to retrieve a snapshot of the event log from the container
+2024-04-09T14:25:42.7158364Z Get-BcContainerDebugInfo -containerName devsrv01-varysrwbcore-ci to get debug information about the container
+2024-04-09T14:25:42.7174570Z Enter-BcContainer -containerName devsrv01-varysrwbcore-ci to open a PowerShell prompt inside the container
+2024-04-09T14:25:42.7188827Z Remove-BcContainer -containerName devsrv01-varysrwbcore-ci to remove the container again
+2024-04-09T14:25:42.7203755Z docker logs devsrv01-varysrwbcore-ci to retrieve information about URL's again
+2024-04-09T14:25:43.2969467Z 
+2024-04-09T14:25:43.2972279Z Creating container took 82 seconds
+2024-04-09T14:25:43.2978844Z 
+2024-04-09T14:25:43.2980034Z  _____                _       _                   _                           _                 _
+2024-04-09T14:25:43.2980386Z |  __ \              | |     (_)                 | |                         | |               (_)
+2024-04-09T14:25:43.2980725Z | |__) |___ ___  ___ | |_   ___ _ __   __ _    __| | ___ _ __   ___ _ __   __| | ___ _ __   ___ _  ___ ___
+2024-04-09T14:25:43.2981423Z |  _  // _ \ __|/ _ \| \ \ / / | '_ \ / _` |  / _` |/ _ \ '_ \ / _ \ '_ \ / _` |/ _ \ '_ \ / __| |/ _ \ __|
+2024-04-09T14:25:43.2981692Z | | \ \  __\__ \ (_) | |\ V /| | | | | (_| | | (_| |  __/ |_) |  __/ | | | (_| |  __/ | | | (__| |  __\__ \
+2024-04-09T14:25:43.2981994Z |_|  \_\___|___/\___/|_| \_/ |_|_| |_|\__, |  \__,_|\___| .__/ \___|_| |_|\__,_|\___|_| |_|\___|_|\___|___/
+2024-04-09T14:25:43.2982232Z                                        __/ |            | |
+2024-04-09T14:25:43.2982423Z                                       |___/             |_|
+2024-04-09T14:25:43.2982504Z 
+2024-04-09T14:25:43.4131573Z Sorted App folders
+2024-04-09T14:25:43.4157001Z - D:\Agent\_work\1\s
+2024-04-09T14:25:43.4163141Z External dependencies
+2024-04-09T14:25:43.4187898Z - 88cf5d4c-8afc-4a98-9cb7-212196c51d74:Continia Software_Continia OPplus_23.1.0.0.app
+2024-04-09T14:25:43.4195016Z - 437dbf0e-84ff-417a-965d-ed2bb9650972:Microsoft_Base Application_23.2.0.0.app
+2024-04-09T14:25:43.4203236Z - 63ca2fa4-4f03-4f2b-a480-172fef340d3f:Microsoft_System Application_23.2.0.0.app
+2024-04-09T14:25:43.4229093Z Sorted TestApp folders
+2024-04-09T14:25:43.4262985Z - None
+2024-04-09T14:25:43.4272106Z Copying previous apps to packages folder
+2024-04-09T14:25:43.4782770Z Downloading C:\Users\dsr\AppData\Local\Temp\3fde6325-54fe-4c7b-a708-ca84bf57efdb\apps.zip
+2024-04-09T14:25:43.4854509Z Downloading using WebClient
+2024-04-09T14:25:44.7772858Z Previous apps
+2024-04-09T14:25:44.7822936Z - Default Publisher_Default Base App Name_2.0.13019.0.app
+2024-04-09T14:25:44.7833397Z - Default Publisher_Default App Name_2.0.13019.0.app
+2024-04-09T14:25:44.7850994Z External previous app dependencies
+2024-04-09T14:25:44.7871492Z - None
+2024-04-09T14:25:44.7910210Z 
+2024-04-09T14:25:44.7911685Z   _____           _        _ _ _
+2024-04-09T14:25:44.7912358Z  |_   _|         | |      | | (_)
+2024-04-09T14:25:44.7913390Z    | |  _ __  ___| |_ __ _| | |_ _ __   __ _    __ _ _ __  _ __  ___
+2024-04-09T14:25:44.7914525Z    | | | '_ \/ __| __/ _` | | | | '_ \ / _` |  / _` | '_ \| '_ \/ __|
+2024-04-09T14:25:44.7915027Z   _| |_| | | \__ \ |_ (_| | | | | | | | (_| | | (_| | |_) | |_) \__ \
+2024-04-09T14:25:44.7915521Z  |_____|_| |_|___/\__\__,_|_|_|_|_| |_|\__, |  \__,_| .__/| .__/|___/
+2024-04-09T14:25:44.7915998Z                                         __/ |       | |   | |
+2024-04-09T14:25:44.7916467Z                                        |___/        |_|   |_|
+2024-04-09T14:25:44.7916628Z 
+2024-04-09T14:25:44.9796309Z ::WARNING::settings.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:48.9816116Z ::WARNING::addin.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.0110268Z ::WARNING::background-01.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.0167022Z ::WARNING::glass-door-01.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.0213747Z ::WARNING::addin.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.0260670Z ::WARNING::fontawesome-all.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.0308568Z ::WARNING::jquery-3.3.1.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.0353155Z ::WARNING::jquery-ui.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.0399069Z ::WARNING::start.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.0443354Z ::WARNING::addin.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.0489870Z ::WARNING::cssreset.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.0863048Z ::WARNING::start.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.1189287Z ::WARNING::signature.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.1435996Z ::WARNING::Vorschau.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.1492925Z ::WARNING::signature.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.1540017Z ::WARNING::start.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.1679283Z ::WARNING::signature.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.1808902Z ::WARNING::background-01.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.1859606Z ::WARNING::glass-door-01.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.1927437Z ::WARNING::addin.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.1972118Z ::WARNING::fontawesome-all.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.2069582Z ::WARNING::jquery-3.3.1.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.2197891Z ::WARNING::jquery-ui.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.2303181Z ::WARNING::start.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.2372945Z ::WARNING::addin.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.2417954Z ::WARNING::cssreset.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.2469847Z ::WARNING::Info.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.2514947Z ::WARNING::RWBAssetVisualization.ControlAddin.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.2559873Z ::WARNING::Vorschau.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.2653850Z ::WARNING::background-01.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.2710767Z ::WARNING::glass-door-01.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.2831163Z ::WARNING::addin.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.2898547Z ::WARNING::fontawesome-all.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.2949807Z ::WARNING::jquery-3.3.1.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.3021255Z ::WARNING::jquery-ui.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.3096480Z ::WARNING::start.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.3160023Z ::WARNING::addin.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.3212546Z ::WARNING::cssreset.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.3285161Z ::WARNING::signature.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.3372244Z ::WARNING::start.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.3458849Z ::WARNING::signature.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.3515255Z ::WARNING::RWBSignature.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.3556509Z ::WARNING::Token.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.3630876Z ::WARNING::Vorschau.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.3757003Z ::WARNING::signature.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.3815437Z ::WARNING::start.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:25:49.3860986Z ::WARNING::signature.app already exists, it looks like you have multiple app files with the same name. App filenames must be unique.
+2024-04-09T14:26:33.7845719Z ##[error]The Operation will be canceled. The next steps may not contain expected logs.
+2024-04-09T14:26:34.4306685Z ##[error]The operation was canceled.
+2024-04-09T14:26:34.4312272Z ##[section]Finishing: Run Pipeline

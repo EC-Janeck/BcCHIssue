@@ -1,0 +1,538 @@
+2024-04-09T14:29:37.4306198Z ##[section]Starting: Run Pipeline
+2024-04-09T14:29:37.4473533Z ==============================================================================
+2024-04-09T14:29:37.4473708Z Task         : PowerShell
+2024-04-09T14:29:37.4473779Z Description  : Run a PowerShell script on Linux, macOS, or Windows
+2024-04-09T14:29:37.4473887Z Version      : 2.237.5
+2024-04-09T14:29:37.4473958Z Author       : Microsoft Corporation
+2024-04-09T14:29:37.4474185Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/powershell
+2024-04-09T14:29:37.4474310Z ==============================================================================
+2024-04-09T14:29:38.6605972Z Generating script.
+2024-04-09T14:29:38.7429691Z Formatted command: . 'D:\Agent\_work\1\s\.azureDevOps\DevOps-Pipeline.ps1' -environment "AzureDevOps" -version "ci" -appBuild 0 -appRevision 2936
+2024-04-09T14:29:38.7806639Z ========================== Starting Command Output ===========================
+2024-04-09T14:29:38.8087731Z ##[command]"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command ". 'D:\Agent\_work\_temp\6f601b48-7bd5-4f11-ac41-cc47ef40b5ab.ps1'"
+2024-04-09T14:29:39.4218579Z Set artifact = //20.3/de
+2024-04-09T14:29:39.4317399Z Set pipelineName = varys.rwb.core-ci
+2024-04-09T14:29:39.4382454Z Set containerName = devsrv01-varysrwbcore-ci
+2024-04-09T14:29:39.4764044Z Set installApps = '.alpackages/Core 9.1.0.257458 - 23.0 (BC 2023 Wave 2).app,.alpackages/OP 23.1.1.476313 - 23.0 (BC 2023 Wave 2).app'
+2024-04-09T14:29:39.4808625Z Set installTestApps = ''
+2024-04-09T14:29:39.4855231Z Set previousApps = 'https://businesscentralapps.azureedge.net/helloworld/latest/apps.zip'
+2024-04-09T14:29:39.4869858Z Set appSourceCopMandatoryAffixes = ''
+2024-04-09T14:29:39.4886099Z Set appSourceCopSupportedCountries = ''
+2024-04-09T14:29:39.4973883Z Set appFolders = '../'
+2024-04-09T14:29:39.5031583Z Set testFolders = 'test'
+2024-04-09T14:29:39.5073297Z Set memoryLimit = '8G'
+2024-04-09T14:29:39.5103775Z Set additionalCountries = ''
+2024-04-09T14:29:39.5118279Z Set genericImageName = ''
+2024-04-09T14:29:39.5155451Z Set vaultNameForLocal = 'BuildVariablen'
+2024-04-09T14:29:39.5187603Z Set bcContainerHelperVersion = 'latest'
+2024-04-09T14:29:39.5301966Z Set installTestRunner = True
+2024-04-09T14:29:39.5366833Z Set installTestFramework = True
+2024-04-09T14:29:39.5402035Z Set installTestLibraries = True
+2024-04-09T14:29:39.5434739Z Set installPerformanceToolkit = False
+2024-04-09T14:29:39.5465788Z Set enableCodeCop = False
+2024-04-09T14:29:39.5497066Z Set enableAppSourceCop = False
+2024-04-09T14:29:39.5528587Z Set enablePerTenantExtensionCop = False
+2024-04-09T14:29:39.5558063Z Set enableUICop = False
+2024-04-09T14:29:39.5591380Z Set doNotSignApps = True
+2024-04-09T14:29:39.5621846Z Set doNotRunTests = False
+2024-04-09T14:29:39.5651668Z Set cacheImage = True
+2024-04-09T14:29:39.5681277Z Set CreateRuntimePackages = True
+2024-04-09T14:29:41.0669597Z BcContainerHelper version 6.0.15
+2024-04-09T14:29:41.5867455Z Setting hostHelperFolder = D:\BcContainerHelper
+2024-04-09T14:29:41.5952140Z Setting bcartifactsCacheFolder = D:\Artifacts.cache
+2024-04-09T14:29:41.6054709Z BC.HelperFunctions emits usage statistics telemetry to Microsoft
+2024-04-09T14:29:41.8263264Z Running on Windows, PowerShell 5.1.20348.859
+2024-04-09T14:29:45.5149771Z ContainerHelperDownloaded
+2024-04-09T14:29:45.5190491Z Custom Files
+2024-04-09T14:29:45.5204938Z Version BaseApp  23.2.0.0
+2024-04-09T14:29:47.6556613Z BaseFolder before run: D:\Agent\_work\1\s
+2024-04-09T14:29:47.6572794Z License file is  ***
+2024-04-09T14:29:47.6580312Z Using ArtifactURL file is  https://bcartifacts-exdbf9fwegejdqak.b02.azurefd.net/onprem/23.2.14098.14562/de
+2024-04-09T14:29:47.6589806Z Run-AlPipeline 
+2024-04-09T14:29:47.6590234Z     -pipelinename varys.rwb.core-ci 
+2024-04-09T14:29:47.6590639Z     -containerName devsrv01-varysrwbcore-ci 
+2024-04-09T14:29:47.6590975Z     -imageName bcimage 
+2024-04-09T14:29:47.6593460Z     -artifact https://bcartifacts-exdbf9fwegejdqak.b02.azurefd.net/onprem/23.2.14098.14562/de 
+2024-04-09T14:29:47.6594468Z     -licenseFile *** 
+2024-04-09T14:29:47.6594762Z     -memoryLimit 8G 
+2024-04-09T14:29:47.6595087Z     -baseFolder D:\Agent\_work\1\s 
+2024-04-09T14:29:47.6595383Z     -bcAuthContext  
+2024-04-09T14:29:47.6595661Z     -environment  
+2024-04-09T14:29:47.6596186Z     -installApps D:\Agent\_work\1\s\ 
+2024-04-09T14:29:47.6596486Z     -installTestApps  
+2024-04-09T14:29:47.6596948Z     -previousApps https://businesscentralapps.azureedge.net/helloworld/latest/apps.zip 
+2024-04-09T14:29:47.6597371Z     -appFolders D:\Agent\_work\1\s 
+2024-04-09T14:29:47.6597689Z     -doNotRunTests:False 
+2024-04-09T14:29:47.6598081Z     -azureDevOps:(AzureDevOps -eq 'AzureDevOps') 
+2024-04-09T14:29:47.6598488Z     -gitLab:(AzureDevOps -eq 'GitLab') 
+2024-04-09T14:29:47.6598891Z     -gitHubActions:(AzureDevOps -eq 'GitHubActions') 
+2024-04-09T14:29:47.6599223Z     -failOn 'error' 
+2024-04-09T14:29:47.6599525Z     -additionalCountries  
+2024-04-09T14:29:47.6599872Z     -buildArtifactFolder D:\Agent\_work\1\a 
+2024-04-09T14:29:47.6600226Z     -CreateRuntimePackages:True 
+2024-04-09T14:29:47.6600616Z     -appBuild 0 -appRevision 2936
+2024-04-09T14:29:47.9390750Z   _____                               _
+2024-04-09T14:29:47.9391435Z  |  __ \                             | |
+2024-04-09T14:29:47.9391770Z  | |__) |_ _ _ __ __ _ _ __ ___   ___| |_ ___ _ __ ___
+2024-04-09T14:29:47.9392267Z  |  ___/ _` | '__/ _` | '_ ` _ \ / _ \ __/ _ \ '__/ __|
+2024-04-09T14:29:47.9392436Z  | |  | (_| | | | (_| | | | | | |  __/ |_  __/ |  \__ \
+2024-04-09T14:29:47.9392664Z  |_|   \__,_|_|  \__,_|_| |_| |_|\___|\__\___|_|  |___/
+2024-04-09T14:29:47.9392753Z 
+2024-04-09T14:29:47.9443544Z Pipeline name                   varys.rwb.core-ci
+2024-04-09T14:29:47.9468078Z Container name                  devsrv01-varysrwbcore-ci
+2024-04-09T14:29:47.9511620Z Image name                      bcimage
+2024-04-09T14:29:47.9555599Z ArtifactUrl                     https://bcartifacts-exdbf9fwegejdqak.b02.azurefd.net/onprem/23.2.14098.14562/de
+2024-04-09T14:29:47.9593608Z BcAuthContext                   Not Specified
+2024-04-09T14:29:47.9626849Z Environment                     
+2024-04-09T14:29:47.9669614Z ReUseContainer                  False
+2024-04-09T14:29:47.9708236Z KeepContainer                   False
+2024-04-09T14:29:47.9744631Z useCompilerFolder               False
+2024-04-09T14:29:47.9772184Z artifactCachePath               
+2024-04-09T14:29:47.9797034Z useDevEndpoint                  False
+2024-04-09T14:29:47.9815798Z Auth                            UserPassword
+2024-04-09T14:29:47.9828862Z CompanyName                     
+2024-04-09T14:29:47.9846553Z MemoryLimit                     8G
+2024-04-09T14:29:47.9866905Z FailOn                          error
+2024-04-09T14:29:47.9901713Z TreatTestFailuresAsWarnings     False
+2024-04-09T14:29:47.9933804Z Enable Task Scheduler           False
+2024-04-09T14:29:47.9968906Z Assign Premium Plan             False
+2024-04-09T14:29:47.9999309Z Install Test Runner             False
+2024-04-09T14:29:48.0027140Z Install Test Framework          False
+2024-04-09T14:29:48.0059454Z Install Test Libraries          False
+2024-04-09T14:29:48.0078017Z Install Perf. Toolkit           False
+2024-04-09T14:29:48.0099373Z InstallOnlyReferencedApps       False
+2024-04-09T14:29:48.0114199Z generateDependencyArtifact      False
+2024-04-09T14:29:48.0128724Z CopySymbolsFromContainer        False
+2024-04-09T14:29:48.0142952Z enableCodeCop                   False
+2024-04-09T14:29:48.0157635Z enableAppSourceCop              False
+2024-04-09T14:29:48.0172168Z enableUICop                     False
+2024-04-09T14:29:48.0186768Z enablePerTenantExtensionCop     False
+2024-04-09T14:29:48.0201219Z enableCodeAnalyzersOnTestApps   False
+2024-04-09T14:29:48.0216387Z doNotPerformUpgrade             False
+2024-04-09T14:29:48.0231261Z doNotPublishApps                False
+2024-04-09T14:29:48.0246197Z uninstallRemovedApps            False
+2024-04-09T14:29:48.0260153Z escapeFromCops                  False
+2024-04-09T14:29:48.0275266Z doNotBuildTests                 False
+2024-04-09T14:29:48.0290198Z doNotRunTests                   False
+2024-04-09T14:29:48.0305118Z doNotRunBcptTests               False
+2024-04-09T14:29:48.0319622Z useDefaultAppSourceRuleSet      False
+2024-04-09T14:29:48.0329604Z rulesetFile                     
+2024-04-09T14:29:48.0345742Z generateErrorLog                False
+2024-04-09T14:29:48.0384811Z enableExternalRulesets          False
+2024-04-09T14:29:48.0413255Z azureDevOps                     True
+2024-04-09T14:29:48.0439871Z gitLab                          False
+2024-04-09T14:29:48.0464297Z gitHubActions                   False
+2024-04-09T14:29:48.0483669Z vsixFile                        
+2024-04-09T14:29:48.0503204Z License file                    Specified
+2024-04-09T14:29:48.0523449Z CodeSignCertPfxFile             Not specified
+2024-04-09T14:29:48.0554403Z CodeSignCertPfxPassword         Not specified
+2024-04-09T14:29:48.0597543Z CodeSignCertIsSelfSigned        False
+2024-04-09T14:29:48.0607233Z KeyVaultCertPfxFile             Not specified
+2024-04-09T14:29:48.0621521Z KeyVaultCertPfxPassword         Not specified
+2024-04-09T14:29:48.0636152Z KeyVaultClientId                
+2024-04-09T14:29:48.0649404Z BuildOutputFile                 
+2024-04-09T14:29:48.0664323Z ContainerEventLogFile           
+2024-04-09T14:29:48.0683376Z TestResultsFile                 D:\Agent\_work\1\s\TestResults.xml
+2024-04-09T14:29:48.0699227Z BcptTestResultsFile             D:\Agent\_work\1\s\bcptTestResults.json
+2024-04-09T14:29:48.0712446Z TestResultsFormat               JUnit
+2024-04-09T14:29:48.0750352Z AdditionalCountries             
+2024-04-09T14:29:48.0764072Z PackagesFolder                  D:\Agent\_work\1\s\.packages
+2024-04-09T14:29:48.0782260Z OutputFolder                    D:\Agent\_work\1\s\.output
+2024-04-09T14:29:48.0795907Z BuildArtifactFolder             D:\Agent\_work\1\a
+2024-04-09T14:29:48.0810518Z CreateRuntimePackages           True
+2024-04-09T14:29:48.0822108Z AppVersion                      
+2024-04-09T14:29:48.0836523Z AppBuild                        0
+2024-04-09T14:29:48.0850681Z AppRevision                     2936
+2024-04-09T14:29:48.0861826Z SourceRepositoryUrl             
+2024-04-09T14:29:48.0872786Z SourceCommit                    
+2024-04-09T14:29:48.0888990Z BuildBy                         BcContainerHelper,6.0.15
+2024-04-09T14:29:48.0900010Z BuildUrl                        
+2024-04-09T14:29:48.0907354Z Install Apps
+2024-04-09T14:29:48.0950444Z - D:\Agent\_work\1\s\
+2024-04-09T14:29:48.0970424Z Install Test Apps
+2024-04-09T14:29:48.0984525Z - None
+2024-04-09T14:29:48.0991805Z Previous Apps
+2024-04-09T14:29:48.1019429Z - https://businesscentralapps.azureedge.net/helloworld/latest/apps.zip
+2024-04-09T14:29:48.1029240Z Application folders
+2024-04-09T14:29:48.1059210Z - D:\Agent\_work\1\s
+2024-04-09T14:29:48.1066703Z Test application folders
+2024-04-09T14:29:48.1076989Z - None
+2024-04-09T14:29:48.1084359Z BCPT Test application folders
+2024-04-09T14:29:48.1100041Z - None
+2024-04-09T14:29:48.1107758Z BCPT Test suites
+2024-04-09T14:29:48.1115644Z - None
+2024-04-09T14:29:48.1122500Z Custom CodeCops
+2024-04-09T14:29:48.1139775Z - None
+2024-04-09T14:29:48.1319286Z 
+2024-04-09T14:29:48.1320098Z   _____       _ _ _                                          _        _
+2024-04-09T14:29:48.1320336Z  |  __ \     | | (_)                                        (_)      (_)
+2024-04-09T14:29:48.1320669Z  | |__) |   _| | |_ _ __   __ _    __ _  ___ _ __   ___ _ __ _  ___   _ _ __ ___   __ _  __ _  ___
+2024-04-09T14:29:48.1321220Z  |  ___/ | | | | | | '_ \ / _` |  / _` |/ _ \ '_ \ / _ \ '__| |/ __| | | '_ ` _ \ / _` |/ _` |/ _ \
+2024-04-09T14:29:48.1321411Z  | |   | |_| | | | | | | | (_| | | (_| |  __/ | | |  __/ |  | | (__  | | | | | | | (_| | (_| |  __/
+2024-04-09T14:29:48.1321615Z  |_|    \__,_|_|_|_|_| |_|\__, |  \__, |\___|_| |_|\___|_|  |_|\___| |_|_| |_| |_|\__,_|\__, |\___|
+2024-04-09T14:29:48.1321997Z                            __/ |   __/ |                                                 __/ |
+2024-04-09T14:29:48.1322144Z                           |___/   |___/                                                 |___/
+2024-04-09T14:29:48.1322217Z 
+2024-04-09T14:29:48.3355284Z Pulling mcr.microsoft.com/businesscentral:ltsc2022
+2024-04-09T14:29:48.6864917Z 
+2024-04-09T14:29:48.6867129Z Pulling generic image took 1 seconds
+2024-04-09T14:29:48.7120983Z 
+2024-04-09T14:29:48.7121576Z    _____                _   _                               _        _
+2024-04-09T14:29:48.7121751Z   / ____|              | | (_)                             | |      (_)
+2024-04-09T14:29:48.7122006Z  | |     _ __ ___  __ _| |_ _ _ __   __ _    ___ ___  _ __ | |_ __ _ _ _ __   ___ _ __
+2024-04-09T14:29:48.7123081Z  | |    | '__/ _ \/ _` | __| | '_ \ / _` |  / __/ _ \| '_ \| __/ _` | | '_ \ / _ \ '__|
+2024-04-09T14:29:48.7123600Z  | |____| | |  __/ (_| | |_| | | | | (_| | | (__ (_) | | | | |_ (_| | | | | |  __/ |
+2024-04-09T14:29:48.7123984Z   \_____|_|  \___|\__,_|\__|_|_| |_|\__, |  \___\___/|_| |_|\__\__,_|_|_| |_|\___|_|
+2024-04-09T14:29:48.7124288Z                                      __/ |
+2024-04-09T14:29:48.7125272Z                                     |___/
+2024-04-09T14:29:48.7125422Z 
+2024-04-09T14:29:48.8488869Z Creaing docker container
+2024-04-09T14:29:48.9764496Z WARNING: Container name should not exceed 15 characters
+2024-04-09T14:29:49.1028735Z BcContainerHelper is version 6.0.15
+2024-04-09T14:29:49.1041957Z BcContainerHelper is running as administrator
+2024-04-09T14:29:50.0381409Z HyperV is Enabled
+2024-04-09T14:29:50.0468604Z UsePsSession is True
+2024-04-09T14:29:50.0545975Z UsePwshForBc24 is True
+2024-04-09T14:29:50.0612340Z Host is Microsoft Windows Server 2022 Standard - 10.0.20348.1129
+2024-04-09T14:29:50.1486446Z Docker Client Version is 26.0.0
+2024-04-09T14:29:50.1518593Z Docker Server Version is 26.0.0
+2024-04-09T14:29:50.3310542Z Removing Desktop shortcuts
+2024-04-09T14:29:50.9884333Z Fetching all docker images
+2024-04-09T14:29:51.0636228Z Fetching all docker volumes
+2024-04-09T14:29:51.1278679Z ArtifactUrl and ImageName specified
+2024-04-09T14:29:51.7782226Z Image bcimage:onprem-23.2.14098.14562-de already exists
+2024-04-09T14:29:52.6516952Z Using image bcimage:onprem-23.2.14098.14562-de
+2024-04-09T14:29:52.7379565Z Creating Container devsrv01-varysrwbcore-ci
+2024-04-09T14:29:52.7570293Z Style: onprem
+2024-04-09T14:29:52.7585155Z Multitenant: No
+2024-04-09T14:29:52.7600145Z Version: 23.2.14098.14562
+2024-04-09T14:29:52.7657126Z Platform: 23.0.14532.0
+2024-04-09T14:29:52.7684256Z Generic Tag: 1.0.2.18
+2024-04-09T14:29:52.7718923Z Container OS Version: 10.0.20348.2340 (ltsc2022)
+2024-04-09T14:29:52.7729419Z Host OS Version: 10.0.20348.1129 (ltsc2022)
+2024-04-09T14:29:52.7866728Z WARNING: Container and host OS build is 20348 or above, defaulting to process isolation. If you encounter issues, you could try to install HyperV.
+2024-04-09T14:29:52.7874470Z Using process isolation
+2024-04-09T14:29:52.7919705Z Using locale de-DE
+2024-04-09T14:29:52.8410373Z Disabling the standard eventlog dump to container log every 2 seconds (use -dumpEventLog to enable)
+2024-04-09T14:29:52.8487974Z Using license file https://varysdev.blob.core.windows.net/bclicence/5209508.bclicense
+2024-04-09T14:29:52.8706396Z Downloading D:\BcContainerHelper\Extensions\devsrv01-varysrwbcore-ci\my\license.bclicense
+2024-04-09T14:29:52.8849505Z Downloading using WebClient
+2024-04-09T14:29:53.1452096Z Additional Parameters:
+2024-04-09T14:29:53.1478571Z --volume "D:\Agent\_work\1\s:c:\sources"
+2024-04-09T14:29:53.1490977Z --env customNavSettings=EnableTaskScheduler=False
+2024-04-09T14:29:53.1502369Z Files in D:\BcContainerHelper\Extensions\devsrv01-varysrwbcore-ci\my:
+2024-04-09T14:29:53.1558410Z - AdditionalOutput.ps1
+2024-04-09T14:29:53.1568416Z - HelperFunctions.ps1
+2024-04-09T14:29:53.1581043Z - license.bclicense
+2024-04-09T14:29:53.1592662Z - MainLoop.ps1
+2024-04-09T14:29:53.1603311Z - SetupVariables.ps1
+2024-04-09T14:29:53.1612643Z - updatehosts.ps1
+2024-04-09T14:29:53.1621402Z Creating container devsrv01-varysrwbcore-ci from image bcimage:onprem-23.2.14098.14562-de
+2024-04-09T14:29:53.4106739Z 419681bb79465966ea1e67d48dcab097498c7e80f8666a15ba8a0c22442e29de
+2024-04-09T14:29:55.7822094Z Waiting for container devsrv01-varysrwbcore-ci to be ready
+2024-04-09T14:29:57.9116506Z Adding DEVSRV01-VARYSR to hosts file
+2024-04-09T14:29:58.9855662Z Initializing...
+2024-04-09T14:29:58.9857380Z Setting host.containerhelper.internal to 172.31.16.1 in container hosts file
+2024-04-09T14:29:58.9857810Z Starting Container
+2024-04-09T14:29:58.9858300Z Hostname is devsrv01-varysrwbcore-ci
+2024-04-09T14:30:00.0672618Z PublicDnsName is devsrv01-varysrwbcore-ci
+2024-04-09T14:30:00.0673067Z Using NavUserPassword Authentication
+2024-04-09T14:30:02.2276376Z Starting Local SQL Server
+2024-04-09T14:30:03.2866787Z Starting Internet Information Server
+2024-04-09T14:30:04.3465613Z Creating Self Signed Certificate
+2024-04-09T14:30:04.3466468Z Self Signed Certificate Thumbprint 049CB30035FBF58E1342498710A6A2313E295E93
+2024-04-09T14:30:04.3467382Z DNS identity devsrv01-varysrwbcore-ci
+2024-04-09T14:30:04.3467933Z Modifying Service Tier Config File with Instance Specific Settings
+2024-04-09T14:30:04.3468274Z Modifying Service Tier Config File with settings from environment variable
+2024-04-09T14:30:04.3468491Z Setting EnableTaskScheduler to False
+2024-04-09T14:30:37.4993502Z Starting Service Tier
+2024-04-09T14:30:37.4993783Z Registering event sources
+2024-04-09T14:30:37.4998100Z Creating DotNetCore Web Server Instance
+2024-04-09T14:30:37.4998876Z Using application pool name: BC
+2024-04-09T14:30:37.4999178Z Using default container name: NavWebApplicationContainer
+2024-04-09T14:30:39.6127425Z Copy files to WWW root C:\inetpub\wwwroot\BC
+2024-04-09T14:30:42.3410612Z Create the application pool BC
+2024-04-09T14:30:44.4297074Z Create website: NavWebApplicationContainer without SSL
+2024-04-09T14:30:44.4304408Z Update configuration: navsettings.json
+2024-04-09T14:30:45.5024754Z Done Configuring Web Client
+2024-04-09T14:30:45.5025632Z Using license file 'c:\run\my\license.bclicense'
+2024-04-09T14:30:54.1573234Z Import License
+2024-04-09T14:30:55.2211679Z Creating http download site
+2024-04-09T14:30:56.2811830Z Setting SA Password and enabling SA
+2024-04-09T14:30:56.2812707Z Creating admin as SQL User and add to sysadmin
+2024-04-09T14:30:58.4030595Z WARNING: This license is not compatible with this version of Business Central.
+2024-04-09T14:30:58.4030984Z Creating SUPER user
+2024-04-09T14:31:00.5198587Z WARNING: This license is not compatible with this version of Business Central.
+2024-04-09T14:31:01.5845378Z WARNING: This license is not compatible with this version of Business Central.
+2024-04-09T14:31:01.5845731Z Container IP Address: 172.31.16.35
+2024-04-09T14:31:01.5846230Z Container Hostname  : devsrv01-varysrwbcore-ci
+2024-04-09T14:31:01.5846526Z Container Dns Name  : devsrv01-varysrwbcore-ci
+2024-04-09T14:31:01.5846817Z Web Client          : http://devsrv01-varysrwbcore-ci/BC/
+2024-04-09T14:31:01.5847099Z Dev. Server         : http://devsrv01-varysrwbcore-ci
+2024-04-09T14:31:01.5847328Z Dev. ServerInstance : BC
+2024-04-09T14:31:01.5847633Z Setting devsrv01-varysrwbcore-ci to 172.31.16.35 in host hosts file
+2024-04-09T14:31:01.5851161Z 
+2024-04-09T14:31:01.5851449Z Files:
+2024-04-09T14:31:01.5852514Z http://devsrv01-varysrwbcore-ci:8080/ALLanguage.vsix
+2024-04-09T14:31:01.5852652Z 
+2024-04-09T14:31:01.5853152Z Container Total Physical Memory is 32.0Gb
+2024-04-09T14:31:01.5853922Z Container Free Physical Memory is 26.0Gb
+2024-04-09T14:31:01.5854283Z 
+2024-04-09T14:31:01.5855327Z Initialization took 64 seconds
+2024-04-09T14:31:01.5857021Z Ready for connections!
+2024-04-09T14:31:04.4375215Z Reading CustomSettings.config from devsrv01-varysrwbcore-ci
+2024-04-09T14:31:05.0595584Z Creating Desktop Shortcuts for devsrv01-varysrwbcore-ci
+2024-04-09T14:31:05.4747862Z Cleanup old dotnet core assemblies
+2024-04-09T14:31:05.4764873Z Container devsrv01-varysrwbcore-ci successfully created
+2024-04-09T14:31:06.5980679Z 
+2024-04-09T14:31:06.5989175Z Use:
+2024-04-09T14:31:06.6004855Z Get-BcContainerEventLog -containerName devsrv01-varysrwbcore-ci to retrieve a snapshot of the event log from the container
+2024-04-09T14:31:06.6019088Z Get-BcContainerDebugInfo -containerName devsrv01-varysrwbcore-ci to get debug information about the container
+2024-04-09T14:31:06.6033669Z Enter-BcContainer -containerName devsrv01-varysrwbcore-ci to open a PowerShell prompt inside the container
+2024-04-09T14:31:06.6047297Z Remove-BcContainer -containerName devsrv01-varysrwbcore-ci to remove the container again
+2024-04-09T14:31:06.6060758Z docker logs devsrv01-varysrwbcore-ci to retrieve information about URL's again
+2024-04-09T14:31:07.2322877Z 
+2024-04-09T14:31:07.2323886Z Creating container took 79 seconds
+2024-04-09T14:31:07.2334895Z 
+2024-04-09T14:31:07.2335554Z  _____                _       _                   _                           _                 _
+2024-04-09T14:31:07.2335954Z |  __ \              | |     (_)                 | |                         | |               (_)
+2024-04-09T14:31:07.2336286Z | |__) |___ ___  ___ | |_   ___ _ __   __ _    __| | ___ _ __   ___ _ __   __| | ___ _ __   ___ _  ___ ___
+2024-04-09T14:31:07.2337106Z |  _  // _ \ __|/ _ \| \ \ / / | '_ \ / _` |  / _` |/ _ \ '_ \ / _ \ '_ \ / _` |/ _ \ '_ \ / __| |/ _ \ __|
+2024-04-09T14:31:07.2337437Z | | \ \  __\__ \ (_) | |\ V /| | | | | (_| | | (_| |  __/ |_) |  __/ | | | (_| |  __/ | | | (__| |  __\__ \
+2024-04-09T14:31:07.2337802Z |_|  \_\___|___/\___/|_| \_/ |_|_| |_|\__, |  \__,_|\___| .__/ \___|_| |_|\__,_|\___|_| |_|\___|_|\___|___/
+2024-04-09T14:31:07.2338100Z                                        __/ |            | |
+2024-04-09T14:31:07.2338333Z                                       |___/             |_|
+2024-04-09T14:31:07.2338445Z 
+2024-04-09T14:31:07.3512884Z Sorted App folders
+2024-04-09T14:31:07.3536917Z - D:\Agent\_work\1\s
+2024-04-09T14:31:07.3544473Z External dependencies
+2024-04-09T14:31:07.3565293Z - 88cf5d4c-8afc-4a98-9cb7-212196c51d74:Continia Software_Continia OPplus_23.1.0.0.app
+2024-04-09T14:31:07.3573216Z - 437dbf0e-84ff-417a-965d-ed2bb9650972:Microsoft_Base Application_23.2.0.0.app
+2024-04-09T14:31:07.3580200Z - 63ca2fa4-4f03-4f2b-a480-172fef340d3f:Microsoft_System Application_23.2.0.0.app
+2024-04-09T14:31:07.3601689Z Sorted TestApp folders
+2024-04-09T14:31:07.3730942Z - None
+2024-04-09T14:31:07.3738879Z Copying previous apps to packages folder
+2024-04-09T14:31:07.3891692Z Downloading C:\Users\dsr\AppData\Local\Temp\0f12b894-0bfd-4c9d-a55f-5f9f1da09a3e\apps.zip
+2024-04-09T14:31:07.3919596Z Downloading using WebClient
+2024-04-09T14:31:08.6433797Z Previous apps
+2024-04-09T14:31:08.6482015Z - Default Publisher_Default Base App Name_2.0.13019.0.app
+2024-04-09T14:31:08.6493797Z - Default Publisher_Default App Name_2.0.13019.0.app
+2024-04-09T14:31:08.6504153Z External previous app dependencies
+2024-04-09T14:31:08.6516441Z - None
+2024-04-09T14:31:08.6548713Z 
+2024-04-09T14:31:08.6549238Z   _____           _        _ _ _
+2024-04-09T14:31:08.6549508Z  |_   _|         | |      | | (_)
+2024-04-09T14:31:08.6549797Z    | |  _ __  ___| |_ __ _| | |_ _ __   __ _    __ _ _ __  _ __  ___
+2024-04-09T14:31:08.6550431Z    | | | '_ \/ __| __/ _` | | | | '_ \ / _` |  / _` | '_ \| '_ \/ __|
+2024-04-09T14:31:08.6550790Z   _| |_| | | \__ \ |_ (_| | | | | | | | (_| | | (_| | |_) | |_) \__ \
+2024-04-09T14:31:08.6551109Z  |_____|_| |_|___/\__\__,_|_|_|_|_| |_|\__, |  \__,_| .__/| .__/|___/
+2024-04-09T14:31:08.6554058Z                                         __/ |       | |   | |
+2024-04-09T14:31:08.6554269Z                                        |___/        |_|   |_|
+2024-04-09T14:31:08.6554373Z 
+2024-04-09T14:31:11.5613852Z Publishing C:\ProgramData\BcContainerHelper\Extensions\devsrv01-varysrwbcore-ci\28eef20a-1565-400d-af97-b82024695123\Core 9.1.0.257458 - 23.0 (BC 2023 Wave 2).app
+2024-04-09T14:31:14.8411324Z Synchronizing Continia Core on tenant default
+2024-04-09T14:31:17.8068645Z Installing Continia Core on tenant default
+2024-04-09T14:31:50.9492756Z App Core 9.1.0.257458 - 23.0 (BC 2023 Wave 2).app successfully published
+2024-04-09T14:31:51.3146842Z Publishing C:\ProgramData\BcContainerHelper\Extensions\devsrv01-varysrwbcore-ci\28eef20a-1565-400d-af97-b82024695123\OP 23.1.1.476313 - 23.0 (BC 2023 Wave 2).app
+2024-04-09T14:32:14.5254781Z Synchronizing Continia OPplus on tenant default
+2024-04-09T14:32:24.2812228Z Installing Continia OPplus on tenant default
+2024-04-09T14:33:29.1750632Z App OP 23.1.1.476313 - 23.0 (BC 2023 Wave 2).app successfully published
+2024-04-09T14:33:30.1214307Z 
+2024-04-09T14:33:30.1217547Z Installing apps took 141 seconds
+2024-04-09T14:33:30.1237809Z 
+2024-04-09T14:33:30.1238404Z    _____                      _ _ _
+2024-04-09T14:33:30.1238724Z   / ____|                    (_) (_)
+2024-04-09T14:33:30.1238997Z  | |     ___  _ __ ___  _ __  _| |_ _ __   __ _    __ _ _ __  _ __  ___
+2024-04-09T14:33:30.1239848Z  | |    / _ \| '_ ` _ \| '_ \| | | | '_ \ / _` |  / _` | '_ \| '_ \/ __|
+2024-04-09T14:33:30.1240256Z  | |____ (_) | | | | | | |_) | | | | | | | (_| | | (_| | |_) | |_) \__ \
+2024-04-09T14:33:30.1240527Z   \_____\___/|_| |_| |_| .__/|_|_|_|_| |_|\__, |  \__,_| .__/| .__/|___/
+2024-04-09T14:33:30.1240712Z                        | |                 __/ |       | |   | |
+2024-04-09T14:33:30.1240845Z                        |_|                |___/        |_|   |_|
+2024-04-09T14:33:30.1240918Z 
+2024-04-09T14:33:30.2160406Z Using Version 23.1.0.2936
+2024-04-09T14:33:30.2402591Z Copying previous apps to packages folder
+2024-04-09T14:33:30.2456995Z Downloading C:\Users\dsr\AppData\Local\Temp\ce339565-36c1-4848-ac5e-c4bb70116ba1\apps.zip
+2024-04-09T14:33:30.2501158Z Downloading using WebClient
+2024-04-09T14:33:31.2982912Z Default Publisher_Default Base App Name = 2.0.13019.0
+2024-04-09T14:33:31.6738374Z Default Publisher_Default App Name = 2.0.13019.0
+2024-04-09T14:33:31.6901901Z 
+2024-04-09T14:33:31.6902536Z Compiling D:\Agent\_work\1\s
+2024-04-09T14:33:32.1407991Z Copying DLLs from C:\Program Files\Microsoft Dynamics NAV\230\Service to assemblyProbingPath
+2024-04-09T14:33:35.8753250Z Removing dotnet Framework Assemblies
+2024-04-09T14:33:41.7857790Z Using Symbols Folder: D:\Agent\_work\1\s\.packages
+2024-04-09T14:33:58.0054309Z Processing dependency Microsoft_Application_23.2.0.0 ()
+2024-04-09T14:33:58.0276922Z Downloading symbols: Microsoft_Application_23.2.14098.14562.app
+2024-04-09T14:33:58.0311643Z Url : http://172.31.16.35:7049/BC/dev/packages?publisher=Microsoft&appName=Application&versionText=23.2.0.0&tenant=default
+2024-04-09T14:33:58.0322661Z Downloading using WebClient
+2024-04-09T14:33:59.6897561Z Adding dependency to System Application from Microsoft
+2024-04-09T14:33:59.7004367Z Adding dependency to Base Application from Microsoft
+2024-04-09T14:33:59.7019493Z Processing dependency Microsoft_System_23.0.0.0 ()
+2024-04-09T14:33:59.7070059Z Downloading symbols: Microsoft_System_23.0.14532.0.app
+2024-04-09T14:33:59.7076784Z Url : http://172.31.16.35:7049/BC/dev/packages?publisher=Microsoft&appName=System&versionText=23.0.0.0&tenant=default
+2024-04-09T14:33:59.7084865Z Downloading using WebClient
+2024-04-09T14:34:00.1522695Z Processing dependency Continia Software_Continia OPplus_23.1.0.0 (88cf5d4c-8afc-4a98-9cb7-212196c51d74)
+2024-04-09T14:34:00.1550426Z Downloading symbols: Continia Software_Continia OPplus_23.1.1.476313.app
+2024-04-09T14:34:00.1558064Z Url : http://172.31.16.35:7049/BC/dev/packages?appId=88cf5d4c-8afc-4a98-9cb7-212196c51d74&versionText=23.1.0.0&tenant=default
+2024-04-09T14:34:00.1566566Z Downloading using WebClient
+2024-04-09T14:34:01.1082885Z Adding dependency to Continia Core from Continia Software
+2024-04-09T14:34:01.1154157Z Processing dependency Microsoft_System Application_23.2.0.0 (63ca2fa4-4f03-4f2b-a480-172fef340d3f)
+2024-04-09T14:34:01.1296670Z Downloading symbols: Microsoft_System Application_23.2.14098.14562.app
+2024-04-09T14:34:01.1305252Z Url : http://172.31.16.35:7049/BC/dev/packages?appId=63ca2fa4-4f03-4f2b-a480-172fef340d3f&versionText=23.2.0.0&tenant=default
+2024-04-09T14:34:01.1314380Z Downloading using WebClient
+2024-04-09T14:34:01.5786016Z Processing dependency Microsoft_Base Application_23.2.0.0 (437dbf0e-84ff-417a-965d-ed2bb9650972)
+2024-04-09T14:34:01.5830841Z Downloading symbols: Microsoft_Base Application_23.2.14098.14562.app
+2024-04-09T14:34:01.5838879Z Url : http://172.31.16.35:7049/BC/dev/packages?appId=437dbf0e-84ff-417a-965d-ed2bb9650972&versionText=23.2.0.0&tenant=default
+2024-04-09T14:34:01.5847181Z Downloading using WebClient
+2024-04-09T14:34:02.2761080Z Processing dependency Continia Software_Continia Core_9.0.0.0 (4b915d7e-c02a-435f-85ab-649086c1e002)
+2024-04-09T14:34:02.2804035Z Downloading symbols: Continia Software_Continia Core_9.1.0.257458.app
+2024-04-09T14:34:02.2811681Z Url : http://172.31.16.35:7049/BC/dev/packages?appId=4b915d7e-c02a-435f-85ab-649086c1e002&versionText=9.0.0.0&tenant=default
+2024-04-09T14:34:02.2820334Z Downloading using WebClient
+2024-04-09T14:34:02.7961942Z Compiling...
+2024-04-09T14:34:02.8223194Z .\alc.exe /project:"c:\sources" /packagecachepath:"c:\sources\.packages" /out:"c:\sources\.output\varys GmbH_varys.rwb.core_23.1.0.2936.app" /BuildBy:"BcContainerHelper,6.0.15" /assemblyprobingpaths:"C:\Program Files\dotnet\shared","C:\ProgramData\BcContainerHelper\Extensions\devsrv01-varysrwbcore-ci\.netPackages\Service"
+2024-04-09T14:35:42.3886056Z Microsoft (R) AL Compiler version 12.4.13.55921
+2024-04-09T14:35:42.3889268Z Copyright (C) Microsoft Corporation. All rights reserved
+2024-04-09T14:35:42.3890318Z 
+2024-04-09T14:35:42.3920284Z Compilation started for project 'varys.rwb.core' containing '3259' files at '16:34:04.994'.
+2024-04-09T14:35:42.3924881Z 
+2024-04-09T14:35:42.3996178Z ##[warning]./c:/sources/src/tableextension/Tab5105-Ext5333000.RWBCustomerTemplate.al(4,56): warning AL0520: Table 'Customer Template' is removed. Reason: Deprecate mini and customer templates. Use table "Customer Templ." instead and for extensions.. Tag: 23.0.
+2024-04-09T14:35:42.4008395Z ##[warning]./c:/sources/src/codeunit/Cod5332699.RwbremEventHandler.al(306,140): warning AL0432: Table 'Invoice Post. Buffer' is marked for removal. Reason: This table will be replaced by table Invoice Posting Buffer in new Invoice Posting implementation.. Tag: 20.0.
+2024-04-09T14:35:42.4020469Z ##[warning]./c:/sources/src/codeunit/Cod5332699.RwbremEventHandler.al(305,51): warning AL0432: Table 'Invoice Post. Buffer' is marked for removal. Reason: This table will be replaced by table Invoice Posting Buffer in new Invoice Posting implementation.. Tag: 20.0.
+2024-04-09T14:35:42.4032844Z ##[warning]./c:/sources/src/codeunit/Cod5332699.RwbremEventHandler.al(305,75): warning AL0432: Method 'OnAfterInvPostBufferPrepareSales' is marked for removal. Reason: Replaced by event in table Invoice Posting Buffer. Tag: 20.0.
+2024-04-09T14:35:42.4042938Z ##[warning]./c:/sources/src/codeunit/Cod5332699.RwbremEventHandler.al(1290,69): warning AL0432: Method 'OnAfterFindInteractTmplCode' is marked for removal. Reason: Replaed by event OnAfterFindInteractTemplateCode with enum parameter.. Tag: 22.0.
+2024-04-09T14:35:42.4052524Z ##[warning]./c:/sources/src/codeunit/Cod5332711.RwbremPurchaseManagement.al(1766,69): warning AL0432: Method 'OnAfterPostVendorEntry' is marked for removal. Reason: Moved to Purchase Invoice Posting implementation. Use the new event OnPostLedgerEntryOnAfterGenJnlPostLine in codeunit 826 "Purch. Post Invoice Events".. Tag: 20.0.
+2024-04-09T14:35:42.4157641Z ##[warning]./c:/sources/src/codeunit/Cod5332711.RwbremPurchaseManagement.al(1877,69): warning AL0432: Method 'OnBeforePostVendorEntry' is marked for removal. Reason: Moved to Purchase Invoice Posting implementation. Use the new event OnPostLedgerEntryOnBeforeGenJnlPostLine in codeunit 826 "Purch. Post Invoice Events".. Tag: 20.0.
+2024-04-09T14:35:42.4176746Z ##[warning]./c:/sources/src/codeunit/Cod5332711.RwbremPurchaseManagement.al(1972,69): warning AL0432: Method 'OnBeforePostBalancingEntry' is marked for removal. Reason: Moved to Purchase Invoice Posting implementation. Use the new event OnPostBalancingEntryOnBeforeGenJnlPostLine in codeunit 826 "Purch. Post Invoice Events".. Tag: 20.0.
+2024-04-09T14:35:42.4188262Z ##[warning]./c:/sources/src/codeunit/Cod5332720.RWBOPplusManagement.al(920,81): warning AL0432: Method 'OnAfterCopyFromCustLedgEntry' is marked for removal. Reason: This procedure will be removed.. Tag: 23.0.
+2024-04-09T14:35:42.4202796Z ##[warning]./c:/sources/src/codeunit/Cod5332720.RWBOPplusManagement.al(1199,54): warning AL0432: Codeunit 'OPP Reminder-Issue' is marked for removal. Reason: Redesign of OPP Reminder, use standard object instead.. Tag: 23.0.
+2024-04-09T14:35:42.4213510Z ##[warning]./c:/sources/src/codeunit/Cod5332720.RWBOPplusManagement.al(1207,54): warning AL0432: Codeunit 'OPP Reminder-Issue' is marked for removal. Reason: Redesign of OPP Reminder, use standard object instead.. Tag: 23.0.
+2024-04-09T14:35:42.4227034Z ##[warning]./c:/sources/src/codeunit/Cod5332720.RWBOPplusManagement.al(1316,84): warning AL0432: Method 'OnBeforeApplyAccount_InPmtImp' is marked for removal. Reason: Not longer in use. Tag: 23.0.
+2024-04-09T14:35:42.4235625Z ##[warning]./c:/sources/src/pageextension/Pag26-Ext5332570.RWBVendorCard.al(13,43): warning AL0432: Field 'Registration No.' is marked for removal. Reason: Replaced with Registration Number. Tag: 22.0.
+2024-04-09T14:35:42.4248523Z ##[warning]./c:/sources/src/pageextension/Pag7012-Ext5332696.RWBPurchasePrices.al(4,52): warning AL0432: Page 'Purchase Prices' is marked for removal. Reason: Replaced by the new implementation (V16) of price calculation: table Price List Line. Tag: 19.0.
+2024-04-09T14:35:42.4262126Z ##[warning]./c:/sources/src/report/Rep5332666.RWBMissingCertificOfExempt.al(33,43): warning AL0432: Field 'Registration No.' is marked for removal. Reason: Replaced with Registration Number. Tag: 22.0.
+2024-04-09T14:35:42.4275849Z ##[warning]./c:/sources/src/report/Rep5333605.RwbremPurchaseDocumentTes.al(1524,49): warning AL0655: The property DataItemLinkReference can only refer to an ancestor DataItem. This warning will become an error in a future release.
+2024-04-09T14:35:42.4286969Z ##[warning]./c:/sources/src/table/Tab5332562.RWBRealEstateMgtSetup.al(1640,29): warning AL0432: Table 'Permission Set' is marked for removal. Reason: Internal table which will be moved to the OnPrem scope in next major release..
+2024-04-09T14:35:42.4300455Z ##[warning]./c:/sources/src/table/Tab5332562.RWBRealEstateMgtSetup.al(1646,29): warning AL0432: Table 'Permission Set' is marked for removal. Reason: Internal table which will be moved to the OnPrem scope in next major release..
+2024-04-09T14:35:42.4310804Z ##[warning]./c:/sources/src/table/Tab5332599.RWBCertificateOfExemption.al(40,34): warning AL0432: Field 'Registration No.' is marked for removal. Reason: Replaced with Registration Number. Tag: 22.0.
+2024-04-09T14:35:42.4324308Z ##[warning]./c:/sources/src/table/Tab5332791.RWBLandTaxAssessmentHeader.al(382,80): warning AL0603: An implicit conversion is being performed from a value of type 'Enum Microsoft.Purchases.Document."Purchase Document Type"' to a value of type 'Option'. This conversion can lead to unexpected runtime issues. This warning will become an error in a future release.
+2024-04-09T14:35:42.4332886Z ##[warning]./c:/sources/src/table/Tab5332791.RWBLandTaxAssessmentHeader.al(395,86): warning AL0603: An implicit conversion is being performed from a value of type 'Enum Microsoft.Purchases.Document."Purchase Document Type"' to a value of type 'Option'. This conversion can lead to unexpected runtime issues. This warning will become an error in a future release.
+2024-04-09T14:35:42.4364714Z ##[warning]./c:/sources/src/table/Tab5332791.RWBLandTaxAssessmentHeader.al(408,87): warning AL0603: An implicit conversion is being performed from a value of type 'Enum Microsoft.Purchases.Document."Purchase Document Type"' to a value of type 'Option'. This conversion can lead to unexpected runtime issues. This warning will become an error in a future release.
+2024-04-09T14:35:42.4368128Z ##[warning]./c:/sources/src/table/Tab5332791.RWBLandTaxAssessmentHeader.al(421,80): warning AL0603: An implicit conversion is being performed from a value of type 'Enum Microsoft.Purchases.Document."Purchase Document Type"' to a value of type 'Option'. This conversion can lead to unexpected runtime issues. This warning will become an error in a future release.
+2024-04-09T14:35:42.4373086Z ##[warning]./c:/sources/src/table/Tab5332791.RWBLandTaxAssessmentHeader.al(434,84): warning AL0603: An implicit conversion is being performed from a value of type 'Enum Microsoft.Purchases.Document."Purchase Document Type"' to a value of type 'Option'. This conversion can lead to unexpected runtime issues. This warning will become an error in a future release.
+2024-04-09T14:35:42.4375770Z ##[warning]./c:/sources/src/table/Tab5332791.RWBLandTaxAssessmentHeader.al(447,85): warning AL0603: An implicit conversion is being performed from a value of type 'Enum Microsoft.Purchases.Document."Purchase Document Type"' to a value of type 'Option'. This conversion can lead to unexpected runtime issues. This warning will become an error in a future release.
+2024-04-09T14:35:42.4377949Z ##[warning]./c:/sources/src/table/Tab5332935.RWBOrderPortalSetup.al(46,29): warning AL0432: Table 'Permission Set' is marked for removal. Reason: Internal table which will be moved to the OnPrem scope in next major release..
+2024-04-09T14:35:42.4379821Z ##[warning]./c:/sources/src/table/Tab5333024.RWBARGEV3CostSchemaExport.al(81,13): warning AL0667: 'TestTableRelation' is being deprecated in the versions: '1.0' or greater.  This warning will become an error in a future release.
+2024-04-09T14:35:42.4475339Z ##[warning]./c:/sources/src/table/Tab5333025.RWBARGEV3BillingUnitCost.al(161,13): warning AL0667: 'TestTableRelation' is being deprecated in the versions: '1.0' or greater.  This warning will become an error in a future release.
+2024-04-09T14:35:42.4483917Z ##[warning]./c:/sources/src/table/Tab5333026.RWBARGEV3FileKSub1.al(114,13): warning AL0667: 'TestTableRelation' is being deprecated in the versions: '1.0' or greater.  This warning will become an error in a future release.
+2024-04-09T14:35:42.4492652Z ##[warning]./c:/sources/src/tableextension/Tab39-Ext5332572.RWBPurchaseLine.al(463,67): warning AL0603: An implicit conversion is being performed from a value of type 'Enum Microsoft.Purchases.Document."Purchase Document Type"' to a value of type 'Option'. This conversion can lead to unexpected runtime issues. This warning will become an error in a future release.
+2024-04-09T14:35:42.4500576Z ##[warning]./c:/sources/src/tableextension/Tab49-Ext5332573.RWBInvoicePostBuffer.al(4,59): warning AL0432: Table 'Invoice Post. Buffer' is marked for removal. Reason: This table will be replaced by table Invoice Posting Buffer in new Invoice Posting implementation.. Tag: 20.0.
+2024-04-09T14:35:42.4508502Z ##[warning]./c:/sources/src/tableextension/Tab7012-Ext5332644.RWBPurchasePrice.al(4,53): warning AL0432: Table 'Purchase Price' is marked for removal. Reason: Replaced by the new implementation (V16) of price calculation: table Price List Line. Tag: 16.0.
+2024-04-09T14:35:42.4516404Z ##[warning]./c:/sources/src/page/Pag5333008.RWBLandTaxAssessment.al(361,35): warning AL0603: An implicit conversion is being performed from a value of type 'Enum Microsoft.Purchases.Document."Purchase Document Type"' to a value of type 'Option'. This conversion can lead to unexpected runtime issues. This warning will become an error in a future release.
+2024-04-09T14:35:42.4524673Z ##[warning]./c:/sources/src/page/Pag5333010.RWBLandTaxAssessmentList.al(309,35): warning AL0603: An implicit conversion is being performed from a value of type 'Enum Microsoft.Purchases.Document."Purchase Document Type"' to a value of type 'Option'. This conversion can lead to unexpected runtime issues. This warning will become an error in a future release.
+2024-04-09T14:35:42.4531931Z ##[warning]./c:/sources/src/page/Pag5333364.RWBPaymentProposalBatchCard.al(683,40): warning AL0432: Field 'Payment Avis Report ID' is marked for removal. Reason: Not longer in use.. Tag: 21.0.
+2024-04-09T14:35:42.4539810Z ##[warning]./c:/sources/src/page/Pag5333364.RWBPaymentProposalBatchCard.al(684,44): warning AL0432: Field 'Payment Avis Report ID' is marked for removal. Reason: Not longer in use.. Tag: 21.0.
+2024-04-09T14:35:42.4552497Z ##[warning]./c:/sources/src/codeunit/Cod5332644.RWBContReminderMake.al(375,42): warning AL0432: Field 'OPP Entry Type' is marked for removal. Reason: Redesign of OPP Reminder, use standard field instead.. Tag: 23.0.
+2024-04-09T14:35:42.4560475Z ##[warning]./c:/sources/src/codeunit/Cod5332644.RWBContReminderMake.al(375,75): warning AL0432: Field 'OPP Entry Type' is marked for removal. Reason: Redesign of OPP Reminder, use standard field instead.. Tag: 23.0.
+2024-04-09T14:35:42.4573895Z ##[warning]./c:/sources/src/codeunit/Cod5332644.RWBContReminderMake.al(415,42): warning AL0432: Field 'OPP Entry Type' is marked for removal. Reason: Redesign of OPP Reminder, use standard field instead.. Tag: 23.0.
+2024-04-09T14:35:42.4581673Z ##[warning]./c:/sources/src/codeunit/Cod5332644.RWBContReminderMake.al(415,75): warning AL0432: Field 'OPP Entry Type' is marked for removal. Reason: Redesign of OPP Reminder, use standard field instead.. Tag: 23.0.
+2024-04-09T14:35:42.4594508Z ##[warning]./c:/sources/src/codeunit/Cod5332644.RWBContReminderMake.al(447,38): warning AL0432: Field 'OPP Entry Type' is marked for removal. Reason: Redesign of OPP Reminder, use standard field instead.. Tag: 23.0.
+2024-04-09T14:35:42.4602059Z ##[warning]./c:/sources/src/codeunit/Cod5332644.RWBContReminderMake.al(447,71): warning AL0432: Field 'OPP Entry Type' is marked for removal. Reason: Redesign of OPP Reminder, use standard field instead.. Tag: 23.0.
+2024-04-09T14:35:42.4614373Z ##[warning]./c:/sources/src/report/Rep5332589.RWBRentalContractApartment.al(387,41): warning AL0432: Method 'FindInteractTmplCode' is marked for removal. Reason: Use FindInteractionTemplateCode(DocumentType: Enum "Interaction Log Entry Document Type") instead.. Tag: 22.0.
+2024-04-09T14:35:42.4621890Z ##[warning]./c:/sources/src/codeunit/Cod5332698.RWBFileUploadDownloadMgt.al(119,12): warning AL0432: Method 'ExportFile' is marked for removal. Reason: Phasing out the Filesystem. Tag: 23.0.
+2024-04-09T14:35:42.4634162Z ##[warning]./c:/sources/src/codeunit/Cod5332699.RwbremEventHandler.al(887,37): warning AL0667: 'IsServiceTier' is being deprecated in the versions: '1.0' or greater.  This warning will become an error in a future release.
+2024-04-09T14:35:42.4641559Z ##[warning]./c:/sources/src/codeunit/Cod5332704.RWBPseudonymizationMgt.al(327,17): warning AL0432: Field 'Registration No.' is marked for removal. Reason: Replaced with Registration Number. Tag: 22.0.
+2024-04-09T14:35:42.4653699Z ##[warning]./c:/sources/src/codeunit/Cod5332704.RWBPseudonymizationMgt.al(328,18): warning AL0432: Field 'Registration No.' is marked for removal. Reason: Replaced with Registration Number. Tag: 22.0.
+2024-04-09T14:35:42.4661323Z ##[warning]./c:/sources/src/codeunit/Cod5332704.RWBPseudonymizationMgt.al(328,80): warning AL0432: Field 'Registration No.' is marked for removal. Reason: Replaced with Registration Number. Tag: 22.0.
+2024-04-09T14:35:42.4726297Z ##[warning]./c:/sources/src/report/Rep5332593.RWBAssetExpose.al(285,41): warning AL0432: Method 'FindInteractTmplCode' is marked for removal. Reason: Use FindInteractionTemplateCode(DocumentType: Enum "Interaction Log Entry Document Type") instead.. Tag: 22.0.
+2024-04-09T14:35:42.4779314Z ##[warning]./c:/sources/src/table/Tab5333079.RWBLandTaxProcessHead.al(78,44): warning AL0603: An implicit conversion is being performed from a value of type 'Option' to a value of type 'Enum "RWB Konsens Country Code"'. This conversion can lead to unexpected runtime issues. This warning will become an error in a future release.
+2024-04-09T14:35:42.4781914Z ##[warning]./c:/sources/src/codeunit/Cod5332708.RwbremContactManagement.al(2268,41): warning AL0603: An implicit conversion is being performed from a value of type 'Option' to a value of type 'Enum Microsoft.Foundation.Address."Country/Region Address Format"'. This conversion can lead to unexpected runtime issues. This warning will become an error in a future release.
+2024-04-09T14:35:42.4786360Z ##[warning]./c:/sources/src/codeunit/Cod5332711.RwbremPurchaseManagement.al(117,32): warning AL0432: Method 'InitNewLine' is marked for removal. Reason: Replaced by InitNewLine(PostingDate: Date; DocumentDate: Date; VATDate: Date; PostingDescription: Text[100]; ShortcutDim1Code: Code[20]; ShortcutDim2Code: Code[20]; DimSetID: Integer; ReasonCode: Code[10]). Tag: 21.0.
+2024-04-09T14:35:42.4791785Z ##[warning]./c:/sources/src/codeunit/Cod5334691.RWBRouteMlInterfaceXml.al(106,26): warning AL0432: Method 'TryLoadXML' is marked for removal. Reason: Phasing out the Filesystem, use the overload with InStream instead.. Tag: 21.0.
+2024-04-09T14:35:42.4794135Z ##[warning]./c:/sources/src/table/Tab5334760.RWBMeterValueImportHeader.al(300,31): warning AL0432: Method 'DownloadFile' is marked for removal. Reason: Phasing out the Filesystem. Tag: 23.0.
+2024-04-09T14:35:42.4796290Z ##[warning]./c:/sources/src/report/Rep5332624.RwbppaPost.al(398,41): warning AL0432: Method 'FindInteractTmplCode' is marked for removal. Reason: Use FindInteractionTemplateCode(DocumentType: Enum "Interaction Log Entry Document Type") instead.. Tag: 22.0.
+2024-04-09T14:35:42.4799466Z ##[warning]./c:/sources/src/report/Rep5332586.RWBContractQuote.al(289,41): warning AL0432: Method 'FindInteractTmplCode' is marked for removal. Reason: Use FindInteractionTemplateCode(DocumentType: Enum "Interaction Log Entry Document Type") instead.. Tag: 22.0.
+2024-04-09T14:35:42.4801799Z ##[warning]./c:/sources/src/report/Rep5332587.RWBAssetReservation.al(237,41): warning AL0432: Method 'FindInteractTmplCode' is marked for removal. Reason: Use FindInteractionTemplateCode(DocumentType: Enum "Interaction Log Entry Document Type") instead.. Tag: 22.0.
+2024-04-09T14:35:42.4804026Z ##[warning]./c:/sources/src/report/Rep5332665.RWBJobCreateSalesCredMemo.al(27,34): warning AL0432: Method 'CreateSalesInvoiceJobTask' is marked for removal. Reason: Replaced by CreateSalesInvoiceJobTask(var JobTask2: Record "Job Task"; PostingDate: Date; DocumentDate: Date; InvoicePerTask: Boolean; var NoOfInvoices: Integer; var OldJobNo: Code[20]; var OldJobTaskNo: Code[20]; LastJobTask: Boolean). Tag: 23.0.
+2024-04-09T14:35:42.4814790Z ##[warning]./c:/sources/src/report/Rep5332665.RWBJobCreateSalesCredMemo.al(33,34): warning AL0432: Method 'CreateSalesInvoiceJobTask' is marked for removal. Reason: Replaced by CreateSalesInvoiceJobTask(var JobTask2: Record "Job Task"; PostingDate: Date; DocumentDate: Date; InvoicePerTask: Boolean; var NoOfInvoices: Integer; var OldJobNo: Code[20]; var OldJobTaskNo: Code[20]; LastJobTask: Boolean). Tag: 23.0.
+2024-04-09T14:35:42.4830561Z ##[warning]./c:/sources/src/report/Rep5332834.RwbargeV3GetPeriodCosts.al(313,44): warning AL0603: An implicit conversion is being performed from a value of type 'Enum "RWB ARGE Version"' to a value of type 'Integer'. This conversion can lead to unexpected runtime issues. This warning will become an error in a future release.
+2024-04-09T14:35:42.4840176Z ##[warning]./c:/sources/src/report/Rep5332834.RwbargeV3GetPeriodCosts.al(313,83): warning AL0603: An implicit conversion is being performed from a value of type 'Enum "RWB ARGE Version"' to a value of type 'Integer'. This conversion can lead to unexpected runtime issues. This warning will become an error in a future release.
+2024-04-09T14:35:42.4853944Z ##[warning]./c:/sources/src/report/Rep5332834.RwbargeV3GetPeriodCosts.al(218,36): warning AL0603: An implicit conversion is being performed from a value of type 'Enum "RWB ARGE Version"' to a value of type 'Integer'. This conversion can lead to unexpected runtime issues. This warning will become an error in a future release.
+2024-04-09T14:35:42.4869346Z ##[warning]./c:/sources/src/report/Rep5332834.RwbargeV3GetPeriodCosts.al(218,75): warning AL0603: An implicit conversion is being performed from a value of type 'Enum "RWB ARGE Version"' to a value of type 'Integer'. This conversion can lead to unexpected runtime issues. This warning will become an error in a future release.
+2024-04-09T14:35:42.4892375Z ##[warning]./c:/sources/src/report/Rep5332844.RWBGenJnlAmountSplitting.al(874,72): warning AL0603: An implicit conversion is being performed from a value of type 'Option' to a value of type 'Enum Microsoft.Finance.GeneralLedger.Journal."Gen. Journal Account Type"'. This conversion can lead to unexpected runtime issues. This warning will become an error in a future release.
+2024-04-09T14:35:42.4902640Z ##[warning]./c:/sources/src/report/Rep5332844.RWBGenJnlAmountSplitting.al(882,67): warning AL0603: An implicit conversion is being performed from a value of type 'Option' to a value of type 'Enum Microsoft.Finance.GeneralLedger.Journal."Gen. Journal Account Type"'. This conversion can lead to unexpected runtime issues. This warning will become an error in a future release.
+2024-04-09T14:35:42.4919395Z ##[warning]./c:/sources/src/report/Rep5334711.RWBMeterValueImport.al(247,28): warning AL0432: Method 'ExtractEntry' is marked for removal. Reason: This function has been replaced by the function ExtractEntry(EntryName: Text; OutputOutStream: OutStream) which instead returns the entry length.. Tag: 23.0.
+2024-04-09T14:35:42.4928140Z ##[warning]./c:/sources/src/report/Rep5334712.RwbargeFileM03Sub1Proces.al(715,47): warning AL0603: An implicit conversion is being performed from a value of type 'Option' to a value of type 'Enum Microsoft.Foundation.Address."Country/Region Address Format"'. This conversion can lead to unexpected runtime issues. This warning will become an error in a future release.
+2024-04-09T14:35:42.4943981Z ##[warning]./c:/sources/src/controladdin/AssetVisualization/Info.txt(1,1): warning AL1025: The file at location 'c:\sources\src\controladdin\AssetVisualization\Info.txt' does not match any definition.
+2024-04-09T14:35:42.4946841Z 
+2024-04-09T14:35:42.4958347Z Compilation ended at '16:35:42.108'.
+2024-04-09T14:35:42.4960210Z 
+2024-04-09T14:35:42.5077361Z D:\Agent\_work\1\s\.output\varys GmbH_varys.rwb.core_23.1.0.2936.app successfully created in 131 seconds
+2024-04-09T14:35:42.5266680Z varys GmbH_varys.rwb.core_23.1.0.2936.app copied to D:\Agent\_work\1\s\.packages
+2024-04-09T14:35:43.9227775Z 
+2024-04-09T14:35:43.9229254Z Compiling apps took 134 seconds
+2024-04-09T14:35:43.9248848Z   _____           _        _ _ _                                    _
+2024-04-09T14:35:43.9249318Z  |_   _|         | |      | | (_)                                  (_)
+2024-04-09T14:35:43.9249669Z    | |  _ __  ___| |_ __ _| | |_ _ __   __ _   _ __  _ __ _____   ___  ___  _   _ ___    __ _ _ __  _ __  ___
+2024-04-09T14:35:43.9250587Z    | | | '_ \/ __| __/ _` | | | | '_ \ / _` | | '_ \| '__/ _ \ \ / / |/ _ \| | | / __|  / _` | '_ \| '_ \/ __|
+2024-04-09T14:35:43.9251378Z   _| |_| | | \__ \ || (_| | | | | | | | (_| | | |_) | | |  __/\ V /| | (_) | |_| \__ \ | (_| | |_) | |_) \__ \
+2024-04-09T14:35:43.9252723Z  |_____|_| |_|___/\__\__,_|_|_|_|_| |_|\__, | | .__/|_|  \___| \_/ |_|\___/ \__,_|___/  \__,_| .__/| .__/|___/
+2024-04-09T14:35:43.9253296Z                                         __/ | | |                                            | |   | |
+2024-04-09T14:35:43.9253583Z                                        |___/  |_|                                            |_|   |_|
+2024-04-09T14:35:45.1106296Z Publishing C:\ProgramData\BcContainerHelper\Extensions\devsrv01-varysrwbcore-ci\df8551fd-beff-46a4-b083-3af68ce2b075\Default Publisher_Default Base App Name_2.0.13019.0.app
+2024-04-09T14:35:45.5942635Z Synchronizing Default Base App Name on tenant default
+2024-04-09T14:35:45.7250854Z Installing Default Base App Name on tenant default
+2024-04-09T14:35:45.9851213Z App Default Publisher_Default Base App Name_2.0.13019.0.app successfully published
+2024-04-09T14:35:47.5749770Z Publishing C:\ProgramData\BcContainerHelper\Extensions\devsrv01-varysrwbcore-ci\d00e2f95-df13-40c6-ab70-af8e02876c26\Default Publisher_Default App Name_2.0.13019.0.app
+2024-04-09T14:35:47.7716384Z Synchronizing Default App Name on tenant default
+2024-04-09T14:35:47.9179731Z Installing Default App Name on tenant default
+2024-04-09T14:35:48.2362165Z App Default Publisher_Default App Name_2.0.13019.0.app successfully published
+2024-04-09T14:35:48.6867655Z 
+2024-04-09T14:35:48.6873013Z Installing apps took 5 seconds
+2024-04-09T14:35:48.6896144Z   _____       _     _ _     _     _
+2024-04-09T14:35:48.6896742Z  |  __ \     | |   | (_)   | |   (_)
+2024-04-09T14:35:48.6897280Z  | |__) |   _| |__ | |_ ___| |__  _ _ __   __ _    __ _ _ __  _ __  ___
+2024-04-09T14:35:48.6898804Z  |  ___/ | | | '_ \| | / __| '_ \| | '_ \ / _` |  / _` | '_ \| '_ \/ __|
+2024-04-09T14:35:48.6900415Z  | |   | |_| | |_) | | \__ \ | | | | | | | (_| | | (_| | |_) | |_) \__ \
+2024-04-09T14:35:48.6901199Z  |_|    \__,_|_.__/|_|_|___/_| |_|_|_| |_|\__, |  \__,_| .__/| .__/|___/
+2024-04-09T14:35:48.6901803Z                                            __/ |       | |   | |
+2024-04-09T14:35:48.6902685Z                                           |___/        |_|   |_|
+2024-04-09T14:36:07.1585546Z Publishing C:\ProgramData\BcContainerHelper\Extensions\devsrv01-varysrwbcore-ci\e187e8ab-affb-44f1-9d62-088cf0423bd3\varys GmbH_varys.rwb.core_23.1.0.2936.app
+2024-04-09T14:36:51.2680432Z Synchronizing varys.rwb.core on tenant default
+2024-04-09T14:37:18.5331267Z Installing varys.rwb.core on tenant default
+2024-04-09T14:37:48.5553242Z App varys GmbH_varys.rwb.core_23.1.0.2936.app successfully published
+2024-04-09T14:37:49.5084474Z 
+2024-04-09T14:37:49.5089107Z Publishing apps took 121 seconds
+2024-04-09T14:37:49.5164866Z   _____                     _          _           _ _     _              _   _  __           _
+2024-04-09T14:37:49.5165316Z  / ____|                   | |        | |         (_) |   | |            | | (_)/ _|         | |
+2024-04-09T14:37:49.5165723Z  | |     ___  _ __  _   _  | |_ ___   | |__  _   _ _| | __| |   __ _ _ __| |_ _| |_ __ _  ___| |_ ___
+2024-04-09T14:37:49.5166779Z  | |    / _ \| '_ \| | | | | __/ _ \  | '_ \| | | | | |/ _` |  / _` | '__| __| |  _/ _` |/ __| __/ __|
+2024-04-09T14:37:49.5167797Z  | |___| (_) | |_) | |_| | | || (_) | | |_) | |_| | | | (_| | | (_| | |  | |_| | || (_| | (__| |_\__ \
+2024-04-09T14:37:49.5168726Z  \______\___/| .__/ \__, |  \__\___/  |_.__/ \__,_|_|_|\__,_|  \__,_|_|   \__|_|_| \__,_|\___|\__|___/
+2024-04-09T14:37:49.5170445Z              | |     __/ |
+2024-04-09T14:37:49.5170918Z              |_|    |___/
+2024-04-09T14:37:49.5502461Z Getting Runtime Package for varys GmbH_varys.rwb.core_23.1.0.2936.app
+2024-04-09T14:38:25.4219917Z Copying runtime package to build artifact
+2024-04-09T14:38:25.4560769Z Files in build artifacts folder:
+2024-04-09T14:38:25.4671268Z Apps\varys GmbH_varys.rwb.core_23.1.0.2936.app (16998016 bytes)
+2024-04-09T14:38:25.4687053Z RuntimePackages\01 - varys GmbH_varys.rwb.core_23.1.0.2936.runtime.app (32941968 bytes)
+2024-04-09T14:38:25.4719016Z 
+2024-04-09T14:38:25.4723019Z Copying to Build Artifacts took 36 seconds
+2024-04-09T14:38:25.4730133Z   _____                           _                               _        _
+2024-04-09T14:38:25.4731018Z  |  __ \                         (_)                             | |      (_)
+2024-04-09T14:38:25.4731789Z  | |__) |___ _ __ ___   _____   ___ _ __   __ _    ___ ___  _ __ | |_ __ _ _ _ __   ___ _ __
+2024-04-09T14:38:25.4733280Z  |  _  // _ \ '_ ` _ \ / _ \ \ / / | '_ \ / _` |  / __/ _ \| '_ \| __/ _` | | '_ \ / _ \ '__|
+2024-04-09T14:38:25.4733899Z  | | \ \  __/ | | | | | (_) \ V /| | | | | (_| | | (_| (_) | | | | || (_| | | | | |  __/ |
+2024-04-09T14:38:25.4734579Z  |_|  \_\___|_| |_| |_|\___/ \_/ |_|_| |_|\__, |  \___\___/|_| |_|\__\__,_|_|_| |_|\___|_|
+2024-04-09T14:38:25.4735167Z                                            __/ |
+2024-04-09T14:38:25.4735586Z                                           |___/
+2024-04-09T14:38:25.7127437Z Removing Session devsrv01-varysrwbcore-ci
+2024-04-09T14:38:25.8094663Z Removing container devsrv01-varysrwbcore-ci
+2024-04-09T14:38:27.7700584Z Removing entries from hosts
+2024-04-09T14:38:27.8069771Z Removing devsrv01-varysrwbcore-ci from container hosts file
+2024-04-09T14:38:27.8802719Z Removing devsrv01-varysrwbcore-ci-* from container hosts file
+2024-04-09T14:38:27.8836547Z Removing Desktop shortcuts
+2024-04-09T14:38:27.9065840Z Removing D:\BcContainerHelper\Extensions\devsrv01-varysrwbcore-ci
+2024-04-09T14:38:28.7188857Z 
+2024-04-09T14:38:28.7190115Z Removing container took 3 seconds
+2024-04-09T14:38:28.7223033Z 
+2024-04-09T14:38:28.7226616Z AL Pipeline finished in 521 seconds
+2024-04-09T14:38:29.2981570Z ##[section]Finishing: Run Pipeline
